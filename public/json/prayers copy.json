@@ -1,0 +1,139 @@
+[
+    {
+        "section": "Prayers",
+        "category": "Divine Will",
+        "title": "Moment of Death",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filename": "DivineWill-MomentOfDeath.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Deliverance",
+        "title": "Deliverance from Oppression",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filename": "Deliverance-DeliveranceFromOppression.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Mary",
+        "title": "Prayer to Mary (Montfort)",
+        "alternateTitle": "",
+        "author": "Montfort",
+        "keywords": [],
+        "filename": "Mary-PrayerToMary-Montfort.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Flame of Love",
+        "title": "Unity",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filename": "FlameOfLove-Unity.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Flame of Love",
+        "title": "Hail Mary (Flame of Love)",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filename": "FlameOfLove-HailMaryFlameOfLove.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Common",
+        "title": "Our Father",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filename": "Common-OurFather.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Common",
+        "title": "Hail Mary",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filename": "Common-HailMary.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Common",
+        "title": "Glory Be",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filename": "Common-GloryBe.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Common",
+        "title": "Act of Contrition",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filename": "Common-ActOfContrition.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Precious Blood",
+        "title": "Most Precious Blood",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filename": "PreciousBlood-MostPreciousBlood.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Creeds",
+        "title": "Nicene Creed",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filename": "Creeds-Nicene.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Creeds",
+        "title": "Apostles Creed",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filename": "Creeds-Apostles.txt"
+    },
+    {
+        "section": "Prayers",
+        "category": "Mary",
+        "title": "Hail Holy Queen",
+        "alternateTitle": "Salve Regina",
+        "author": "",
+        "keywords": [],
+        "filename": "Mary-HailHolyQueen.txt"
+    },
+    {
+        "section": "Chaplets",
+        "category": "Rosary",
+        "title": "",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filetype": "image",
+        "filename": "rosary2.svg"
+    },
+    {
+        "section": "Chaplets",
+        "category": "Divine Mercy",
+        "title": "",
+        "alternateTitle": "",
+        "author": "",
+        "keywords": [],
+        "filetype": "image",
+        "filename": "rosary2.svg"
+    }
+]
