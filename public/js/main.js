@@ -24,7 +24,7 @@ window.onload = async function () {
   let x = document.cookie;
   console.log(x);
   processTextFile("prayers/Prayers_DivineWill_MomentOfDeath.txt");
-  await loadPrayers();
+  // await loadPrayers();
   await loadChaplets();
 
   elementOverlayClose.addEventListener("click", function () {

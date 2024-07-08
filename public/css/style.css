@@ -11,6 +11,15 @@
     format("truetype");
 }
 
+@font-face {
+  font-family: "KozukaGothicProB";
+  src: url("../fonts/Kozuka_Gothic_Pro/KozGoProBold.otf") format("opentype");
+}
+
+.KozukaGothicProB {
+  font-family: "KozukaGothicProB";
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -200,6 +209,26 @@ body {
   margin-bottom: 10px;
 }
 
+.chapletStep2 {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.chapletStepNumber {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 24px;
+}
+
+.chapletStepText {
+  grid-column: 2;
+  grid-row: 1;
+}
 .chapletRepeat {
   font-weight: 600;
 }
