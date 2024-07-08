@@ -14,25 +14,37 @@ let elementClientWidth;
 let elementClientHeight;
 let elementOffsetWidth;
 let elementOffsetHeight;
-
+let elementHamburgerIcon = document.getElementById("hamburgerIcon");
+let elementHamburger = document.getElementById("hamburger");
 console.log("main.js");
 
 window.onload = async function () {
   resetWidthHeight();
+  await loadPrayers();
+  await loadChaplets();
+  addEventListeners();
+};
+
+function test() {
   document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   document.cookie = "prayerFontSize=32";
   let x = document.cookie;
   console.log(x);
   processTextFile("prayers/Prayers_DivineWill_MomentOfDeath.txt");
-  // await loadPrayers();
-  await loadChaplets();
+}
+
+function addEventListeners() {
+  elementHamburger.addEventListener("click", function () {
+    console.log("clicked hamburger");
+    hamburger.classList.toggle("is-active");
+  });
 
   elementOverlayClose.addEventListener("click", function () {
     elementOverlay.style.display = "none";
     elementBackground.style.display = "grid";
     elementPrayerContainer.style.display = "grid";
   });
-};
+}
 
 async function processTextFile(filename) {
   console.log(filename);

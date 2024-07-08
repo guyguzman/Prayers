@@ -7,7 +7,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_DivineWill_MomentOfDeath.txt",
-            "display": false
+            "display": false,
+            "link": ""
         },
         {
             "category": "Deliverance",
@@ -16,7 +17,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_Deliverance_DeliveranceFromOppression.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Mary",
@@ -25,7 +27,8 @@
             "author": "Montfort",
             "keywords": [],
             "filename": "Prayers_Mary_PrayerToMary.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Flame of Love",
@@ -34,7 +37,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_FlameOfLove_Unity.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Flame of Love",
@@ -43,7 +47,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_FlameOfLove_HailMaryFlameOfLove.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Common",
@@ -52,7 +57,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_Common_OurFather.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Common",
@@ -61,7 +67,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_Common_HailMary.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Common",
@@ -70,7 +77,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_Common_GloryBe.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Common",
@@ -79,7 +87,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_Common_ActOfContrition.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Precious Blood",
@@ -88,7 +97,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_PreciousBlood_MostPreciousBlood.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Creeds",
@@ -97,7 +107,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_Creeds_Nicene.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Creeds",
@@ -106,7 +117,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_Creeds_Apostles.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Mary",
@@ -115,7 +127,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_Mary_HailHolyQueen.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Divine Mercy",
@@ -124,7 +137,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_DivineMercy_HourOfMercy.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Guardian Angel",
@@ -133,7 +147,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_GuardianAngel_GuardianAngelPrayer.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "St Michael",
@@ -142,7 +157,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_StMichael_StMichaelPrayer.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "St Michael",
@@ -151,7 +167,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_StMichael_StMichaelMorningPrayer.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Divine Mercy",
@@ -169,7 +186,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_Purgatory_PreciousBlood.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "St Joseph",
@@ -178,7 +196,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_StJoseph_YearOfStJoseph.txt",
-            "display": true
+            "display": true,
+            "link": ""
         },
         {
             "category": "Souls in Purgatory",
@@ -187,7 +206,8 @@
             "author": "",
             "keywords": [],
             "filename": "Prayers_Purgatory_StFaustina.txt",
-            "display": true
+            "display": true,
+            "link": ""
         }
     ],
     "rosary": [],
@@ -199,7 +219,8 @@
             "author": "",
             "keywords": [],
             "filename": "Chaplets_DivineMercy.txt",
-            "display": true
+            "display": true,
+            "link": ""
         }
     ],
     "novenas": [],
