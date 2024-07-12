@@ -242,12 +242,25 @@ body {
   grid-column: 2;
   grid-row: 1;
 }
+
 .chapletRepeat {
   font-weight: 600;
 }
 
 .chapletStepBead {
   font-weight: 300;
+}
+
+chapletSubStep {
+  padding-left: 20px;
+}
+
+.chapletSubStepTitle {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.chapletSubStepText {
 }
 
 .chapletImage {
