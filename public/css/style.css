@@ -224,27 +224,47 @@ body {
 
 .chapletStep {
   display: grid;
-  grid-template-columns: 30px 1fr;
-  grid-template-rows: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
   font-size: 16px;
   font-weight: 600;
   margin-top: 16px;
   margin-bottom: 10px;
+  width: 100%;
 }
 
-.chapletStepNumber {
-  grid-column: 1;
-  grid-row: 1;
+.chapletStepTitle {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.chapletStepTitleNumber {
   font-size: 24px;
+  display: grid;
+  place-items: center;
+  margin-top: 2px;
 }
 
-.chapletStepText {
-  grid-column: 2;
-  grid-row: 1;
+.chapletStepTitleText {
+  display: grid;
+  align-items: center;
+}
+
+.chapletStepBody {
+  grid-column: 1;
+  grid-row: 2;
+  margin-left: 34px;
+}
+
+.chapletStepBodyParagraph {
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .chapletRepeat {
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .chapletStepBead {
@@ -257,10 +277,12 @@ chapletSubStep {
 
 .chapletSubStepTitle {
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .chapletSubStepText {
+  font-weight: 400;
+  margin-bottom: 12px;
 }
 
 .chapletImage {
