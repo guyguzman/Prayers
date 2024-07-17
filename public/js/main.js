@@ -23,7 +23,7 @@ window.onload = async function () {
   // await loadPrayers();
   // await loadChaplets();
   // addEventListeners();
-  testSort();
+  loadSortedPrayers();
 };
 
 function test() {
@@ -57,25 +57,38 @@ function testSort() {
         });
         console.log(subCategoriesArray);
       });
-      // console.log(categoriesSorted);
-
-      // let prayersSorted = prayers.sort((a, b) => {
-      //   const valueA = a.title.toUpperCase();
-      //   const valueB = b.title.toUpperCase();
-      //   if (valueA < valueA) {
-      //     return -1;
-      //   }
-      //   if (valueA > valueB) {
-      //     return 1;
-      //   }
-      //   return 0;
-      // });
-      // prayersSorted.forEach((prayer) => {
-      //   if (prayer.display == true) insertPrayer(prayer);
-      // });
       // let beautifyJSON = JSON.stringify(prayers[0], null, 4);
     });
 }
+
+function loadSortedPrayers() {
+  fetch(prayerFilepath)
+    .then((response) => response.json())
+    .then((json) => {
+      console.log(json);
+      let everything = json;
+      let categoriesArray = Array.from(everything);
+      console.log(categoriesArray);
+      let categoriesSorted = categoriesArray.sort(sortIntegerValues("sort"));
+      console.log(categoriesSorted);
+      categoriesSorted.forEach((category) => {
+        console.log(category.title);
+        let subCategoriesArray = Array.from(category.subCategories);
+        subCategoriesArray.forEach((subCategory) => {
+          console.log(`   ${subCategory.title}`);
+          if (subCategory.display == true) insertSubCategoryTitle(subCategory);
+          let prayersArray = Array.from(subCategory.prayers);
+          prayersArray.forEach((prayer) => {
+            console.log(`      ${prayer.title}`);
+            if (prayer.display == true) insertPrayer(prayer);
+          });
+        });
+        console.log(subCategoriesArray);
+      });
+      // let beautifyJSON = JSON.stringify(prayers[0], null, 4);
+    });
+}
+
 function addEventListeners() {
   elementHamburger.addEventListener("click", function () {
     console.log("clicked hamburger");
@@ -200,6 +213,16 @@ function sortStringValues(key, order = "asc") {
   };
 }
 
+async function insertSubCategoryTitle(title) {
+  divPrayerCategory.className = "prayerCategory";
+  divPrayerCategoryTitle.className = "prayerCategoryTitle";
+  divPrayerCategoryPrayers.className = "prayerCategoryPrayers";
+  divPrayerCategoryTitle.innerHTML = `${prayer.title}`;
+  divPrayerCategory.appendChild(divPrayerCategoryTitle);
+  divPrayerCategory.appendChild(divPrayerCategoryPrayers);
+  prayerContainer.appendChild(divPrayerCategory);
+}
+
 async function insertPrayer(prayer) {
   let divPrayerCategory = document.createElement("div");
   let divPrayerCategoryTitle = document.createElement("div");
@@ -208,20 +231,20 @@ async function insertPrayer(prayer) {
   let divPrayerTitle = document.createElement("div");
   let divPrayerContent = document.createElement("div");
 
-  if (prayer.category !== previousPrayerCategory) {
-    currentPrayerCategoryIndex += 1;
-    previousPrayerCategory = prayer.category;
-    divPrayerCategory.className = "prayerCategory";
-    divPrayerCategoryTitle.className = "prayerCategoryTitle";
-    divPrayerCategoryPrayers.className = "prayerCategoryPrayers";
-    divPrayerCategoryTitle.innerHTML = `${prayer.category}`;
-    divPrayerCategory.appendChild(divPrayerCategoryTitle);
-    divPrayerCategory.appendChild(divPrayerCategoryPrayers);
-    prayerContainer.appendChild(divPrayerCategory);
-    prayerCategories.push(divPrayerCategoryPrayers);
-  } else {
-    divPrayerCategoryPrayers = prayerCategories[currentPrayerCategoryIndex];
-  }
+  // if (prayer.title !== previousPrayerCategory) {
+  //   currentPrayerCategoryIndex += 1;
+  //   previousPrayerCategory = prayer.category;
+  //   divPrayerCategory.className = "prayerCategory";
+  //   divPrayerCategoryTitle.className = "prayerCategoryTitle";
+  //   divPrayerCategoryPrayers.className = "prayerCategoryPrayers";
+  //   divPrayerCategoryTitle.innerHTML = `${prayer.title}`;
+  //   divPrayerCategory.appendChild(divPrayerCategoryTitle);
+  //   divPrayerCategory.appendChild(divPrayerCategoryPrayers);
+  //   prayerContainer.appendChild(divPrayerCategory);
+  //   prayerCategories.push(divPrayerCategoryPrayers);
+  // } else {
+  //   divPrayerCategoryPrayers = prayerCategories[currentPrayerCategoryIndex];
+  // }
 
   let filePath = `prayers/${prayer.filename}`;
 
@@ -295,8 +318,6 @@ async function insertPrayer(prayer) {
           divShrinkBox.style.display = "none";
         });
       }
-
-      return textString;
     });
 }
 
