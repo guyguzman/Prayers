@@ -1,0 +1,224 @@
+[
+    {
+        "category": "general",
+        "title": "General Prayers",
+        "prayers": [
+            {
+                "subCategory": "Blessed Virgin Mary",
+                "prayers": [
+                    {
+                        "title": "Hail Mary",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Common_HailMary.txt",
+                        "display": true,
+                        "link": ""
+                    },
+                    {
+                        "title": "Prayer to Mary (Montfort)",
+                        "alternateTitle": "",
+                        "author": "Montfort",
+                        "keywords": [],
+                        "filename": "Prayers_Mary_PrayerToMary.txt",
+                        "display": true,
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "subCategory": "Common",
+                "prayers": [
+                    {
+                        "title": "Our Father",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Common_OurFather.txt",
+                        "display": true,
+                        "link": ""
+                    },
+                    {
+                        "title": "Hail Mary",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Common_HailMary.txt",
+                        "display": true,
+                        "link": ""
+                    },
+                    {
+                        "title": "Glory Be",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Common_GloryBe.txt",
+                        "display": true,
+                        "link": ""
+                    },
+                    {
+                        "title": "Act of Contrition",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Common_ActOfContrition.txt",
+                        "display": true,
+                        "link": ""
+                    },
+                    {
+                        "title": "Hail Holy Queen",
+                        "alternateTitle": "Salve Regina",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Mary_HailHolyQueen.txt",
+                        "display": true,
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "subCategory": "Flame of Love",
+                "prayers": []
+            },
+            {
+                "subCategory": "Guardian Angel",
+                "prayers": [
+                    {
+                        "title": "Guardian Angel Prayer",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_GuardianAngel_GuardianAngelPrayer.txt",
+                        "display": true,
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "subCategory": "St Michael",
+                "prayers": [
+                    {
+                        "title": "St Michael Prayer",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_StMichael_StMichaelPrayer.txt",
+                        "display": true,
+                        "link": ""
+                    },
+                    {
+                        "title": "St Michael Morning Prayer",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_StMichael_StMichaelMorningPrayer.txt",
+                        "display": true,
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "subCategory": "St Joseph",
+                "prayers": []
+            },
+            {
+                "subCategory": "Souls In Purgatory",
+                "prayers": [
+                    {
+                        "title": "Precious Blood",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Purgatory_PreciousBlood.txt",
+                        "display": true,
+                        "link": ""
+                    },
+                    {
+                        "title": "St Faustina",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Purgatory_StFaustina.txt",
+                        "display": true,
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "subCategory": "Divine Mercy",
+                "prayers": [
+                    {
+                        "title": "Divine Mercy 3 O’Clock Prayer",
+                        "alternateTitle": "Salve Regina",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_DivineMercy_HourOfMercy.txt",
+                        "display": true,
+                        "link": ""
+                    },
+                    {
+                        "title": "Prayer of Entrustment to Divine Mercy",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_DivineMercy_PrayerOfEntrustment.txt",
+                        "display": true,
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "subCategory": "St Joseph",
+                "prayers": []
+            },
+            {
+                "subCategory": "St Joseph",
+                "prayers": []
+            },
+            {
+                "subCategory": "templateOnly",
+                "prayers": []
+            }
+        ]
+    },
+    {
+        "category": "chaplets",
+        "title": "Chaplets",
+        "prayers": [
+            {
+                "subCategory": "",
+                "prayers": []
+            }
+        ]
+    },
+    {
+        "category": "novenas",
+        "title": "Novenas",
+        "prayers": [
+            {
+                "subCategory": "",
+                "prayers": []
+            }
+        ]
+    },
+    {
+        "category": "litanies",
+        "title": "Litanies",
+        "prayers": [
+            {
+                "subCategory": "",
+                "prayers": []
+            }
+        ]
+    },
+    {
+        "category": "rosary",
+        "title": "Rosary",
+        "prayers": [
+            {
+                "subCategory": "rosary",
+                "prayers": []
+            }
+        ]
+    }
+]

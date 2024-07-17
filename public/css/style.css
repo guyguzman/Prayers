@@ -233,17 +233,17 @@ body {
   width: 100%;
 }
 
-.chapletStepTitle {
-  display: flex;
-  width: 100%;
-  gap: 10px;
-}
-
 .chapletStepTitleNumber {
   font-size: 24px;
   display: grid;
   place-items: center;
   margin-top: 2px;
+}
+
+.chapletStepTitle {
+  display: flex;
+  width: 100%;
+  gap: 10px;
 }
 
 .chapletStepTitleText {
