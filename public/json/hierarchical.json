@@ -2,7 +2,7 @@
     {
         "category": "general",
         "title": "General Prayers",
-        "prayers": [
+        "subCategories": [
             {
                 "subCategory": "Blessed Virgin Mary",
                 "prayers": [
@@ -21,6 +21,15 @@
                         "author": "Montfort",
                         "keywords": [],
                         "filename": "Prayers_Mary_PrayerToMary.txt",
+                        "display": true,
+                        "link": ""
+                    },
+                    {
+                        "title": "Hail Holy Queen",
+                        "alternateTitle": "Salve Regina",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Mary_HailHolyQueen.txt",
                         "display": true,
                         "link": ""
                     }
@@ -64,21 +73,33 @@
                         "filename": "Prayers_Common_ActOfContrition.txt",
                         "display": true,
                         "link": ""
-                    },
-                    {
-                        "title": "Hail Holy Queen",
-                        "alternateTitle": "Salve Regina",
-                        "author": "",
-                        "keywords": [],
-                        "filename": "Prayers_Mary_HailHolyQueen.txt",
-                        "display": true,
-                        "link": ""
                     }
                 ]
             },
             {
                 "subCategory": "Flame of Love",
-                "prayers": []
+                "prayers": [
+                    {
+                        "category": "Flame of Love",
+                        "title": "Unity",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_FlameOfLove_Unity.txt",
+                        "display": true,
+                        "link": ""
+                    },
+                    {
+                        "category": "Flame of Love",
+                        "title": "Hail Mary (Flame of Love)",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_FlameOfLove_HailMaryFlameOfLove.txt",
+                        "display": true,
+                        "link": ""
+                    }
+                ]
             },
             {
                 "subCategory": "Guardian Angel",
@@ -119,7 +140,17 @@
             },
             {
                 "subCategory": "St Joseph",
-                "prayers": []
+                "prayers": [
+                    {
+                        "title": "Year Of St Joseph",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_StJoseph_YearOfStJoseph.txt",
+                        "display": true,
+                        "link": ""
+                    }
+                ]
             },
             {
                 "subCategory": "Souls In Purgatory",
@@ -149,7 +180,7 @@
                 "prayers": [
                     {
                         "title": "Divine Mercy 3 O’Clock Prayer",
-                        "alternateTitle": "Salve Regina",
+                        "alternateTitle": "",
                         "author": "",
                         "keywords": [],
                         "filename": "Prayers_DivineMercy_HourOfMercy.txt",
@@ -168,11 +199,48 @@
                 ]
             },
             {
-                "subCategory": "St Joseph",
+                "subCategory": "Creeds",
+                "prayers": [
+                    {
+                        "title": "Nicene Creed",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Creeds_Nicene.txt",
+                        "display": true,
+                        "link": ""
+                    },
+                    {
+                        "title": "Apostles Creed",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Creeds_Apostles.txt",
+                        "display": true,
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "subCategory": "Precious Blood",
+                "prayers": [
+                    {
+                        "title": "Most Precious Blood",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_PreciousBlood_MostPreciousBlood.txt",
+                        "display": true,
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "subCategory": "templateOnly",
                 "prayers": []
             },
             {
-                "subCategory": "St Joseph",
+                "subCategory": "templateOnly",
                 "prayers": []
             },
             {
@@ -184,7 +252,7 @@
     {
         "category": "chaplets",
         "title": "Chaplets",
-        "prayers": [
+        "subCategories": [
             {
                 "subCategory": "",
                 "prayers": []
@@ -194,7 +262,7 @@
     {
         "category": "novenas",
         "title": "Novenas",
-        "prayers": [
+        "subCategories": [
             {
                 "subCategory": "",
                 "prayers": []
@@ -204,7 +272,7 @@
     {
         "category": "litanies",
         "title": "Litanies",
-        "prayers": [
+        "subCategories": [
             {
                 "subCategory": "",
                 "prayers": []
@@ -214,10 +282,31 @@
     {
         "category": "rosary",
         "title": "Rosary",
-        "prayers": [
+        "subCategories": [
             {
                 "subCategory": "rosary",
                 "prayers": []
+            }
+        ]
+    },
+    {
+        "category": "deliverance",
+        "title": "Deliverance",
+        "subCategories": [
+            {
+                "subCategory": "deliverance",
+                "prayers": [
+                    {
+                        "category": "Deliverance",
+                        "title": "Deliverance from Oppression",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Deliverance_DeliveranceFromOppression.txt",
+                        "display": true,
+                        "link": ""
+                    }
+                ]
             }
         ]
     }
