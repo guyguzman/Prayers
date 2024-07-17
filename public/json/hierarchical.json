@@ -2,9 +2,11 @@
     {
         "category": "general",
         "title": "General Prayers",
+        "sort": 1,
         "subCategories": [
             {
                 "subCategory": "Blessed Virgin Mary",
+                "sort": 1,
                 "prayers": [
                     {
                         "title": "Hail Mary",
@@ -13,7 +15,8 @@
                         "keywords": [],
                         "filename": "Prayers_General_BlessedVirginMary_HailMary.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     },
                     {
                         "title": "Prayer to Mary (Montfort)",
@@ -22,7 +25,8 @@
                         "keywords": [],
                         "filename": "Prayers_General_BlessedVirginMary_PrayerToMaryMontfort.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     },
                     {
                         "title": "Hail Holy Queen",
@@ -31,12 +35,14 @@
                         "keywords": [],
                         "filename": "Prayers_General_BlessedVirginMary_HailHolyQueen.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     }
                 ]
             },
             {
                 "subCategory": "Common",
+                "sort": 1,
                 "prayers": [
                     {
                         "title": "Our Father",
@@ -45,7 +51,8 @@
                         "keywords": [],
                         "filename": "Prayers_General_Common_OurFather.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     },
                     {
                         "title": "Hail Mary",
@@ -54,7 +61,8 @@
                         "keywords": [],
                         "filename": "Prayers_General_Common_HailMary.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     },
                     {
                         "title": "Glory Be",
@@ -63,7 +71,8 @@
                         "keywords": [],
                         "filename": "Prayers_General_Common_GloryBe.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     },
                     {
                         "title": "Act of Contrition",
@@ -72,12 +81,14 @@
                         "keywords": [],
                         "filename": "Prayers_General_Common_ActOfContrition.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     }
                 ]
             },
             {
                 "subCategory": "Flame of Love",
+                "sort": 1,
                 "prayers": [
                     {
                         "category": "Flame of Love",
@@ -87,7 +98,8 @@
                         "keywords": [],
                         "filename": "Prayers_General_FlameOfLove_Unity.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     },
                     {
                         "category": "Flame of Love",
@@ -97,12 +109,14 @@
                         "keywords": [],
                         "filename": "Prayers_General_FlameOfLove_HailMaryFlameOfLove.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     }
                 ]
             },
             {
                 "subCategory": "Guardian Angel",
+                "sort": 1,
                 "prayers": [
                     {
                         "title": "Guardian Angel Prayer",
@@ -111,12 +125,14 @@
                         "keywords": [],
                         "filename": "Prayers_General_GuardianAngel_GuardianAngelPrayer.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     }
                 ]
             },
             {
                 "subCategory": "St Michael",
+                "sort": 1,
                 "prayers": [
                     {
                         "title": "St Michael Prayer",
@@ -125,7 +141,8 @@
                         "keywords": [],
                         "filename": "Prayers_General_StMichael_StMichaelPrayer.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     },
                     {
                         "title": "St Michael Morning Prayer",
@@ -134,12 +151,14 @@
                         "keywords": [],
                         "filename": "Prayers_General_StMichael_StMichaelMorningPrayer.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     }
                 ]
             },
             {
                 "subCategory": "St Joseph",
+                "sort": 1,
                 "prayers": [
                     {
                         "title": "Year Of St Joseph",
@@ -148,12 +167,14 @@
                         "keywords": [],
                         "filename": "Prayers_General_StJoseph_YearOfStJoseph.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     }
                 ]
             },
             {
                 "subCategory": "Souls In Purgatory",
+                "sort": 1,
                 "prayers": [
                     {
                         "title": "Precious Blood",
@@ -162,7 +183,8 @@
                         "keywords": [],
                         "filename": "Prayers_General_Purgatory_PreciousBlood.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     },
                     {
                         "title": "St Faustina",
@@ -171,12 +193,14 @@
                         "keywords": [],
                         "filename": "Prayers_General_Purgatory_StFaustina.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     }
                 ]
             },
             {
                 "subCategory": "Divine Mercy",
+                "sort": 1,
                 "prayers": [
                     {
                         "title": "Divine Mercy 3 O’Clock Prayer",
@@ -185,7 +209,8 @@
                         "keywords": [],
                         "filename": "Prayers_General_DivineMercy_HourOfMercy.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     },
                     {
                         "title": "Prayer of Entrustment to Divine Mercy",
@@ -194,12 +219,14 @@
                         "keywords": [],
                         "filename": "Prayers_General_DivineMercy_PrayerOfEntrustment.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     }
                 ]
             },
             {
                 "subCategory": "Creeds",
+                "sort": 1,
                 "prayers": [
                     {
                         "title": "Nicene Creed",
@@ -208,7 +235,8 @@
                         "keywords": [],
                         "filename": "Prayers_General_Creeds_Nicene.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     },
                     {
                         "title": "Apostles Creed",
@@ -217,12 +245,14 @@
                         "keywords": [],
                         "filename": "Prayers_General_Creeds_Apostles.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     }
                 ]
             },
             {
                 "subCategory": "Precious Blood",
+                "sort": 1,
                 "prayers": [
                     {
                         "title": "Most Precious Blood",
@@ -231,20 +261,24 @@
                         "keywords": [],
                         "filename": "Prayers_General_PreciousBlood_MostPreciousBlood.txt",
                         "display": true,
-                        "link": ""
+                        "link": "",
+                        "sort": 1
                     }
                 ]
             },
             {
                 "subCategory": "templateOnly",
+                "sort": 1,
                 "prayers": []
             },
             {
                 "subCategory": "templateOnly",
+                "sort": 1,
                 "prayers": []
             },
             {
                 "subCategory": "templateOnly",
+                "sort": 1,
                 "prayers": []
             }
         ]
@@ -252,16 +286,30 @@
     {
         "category": "chaplets",
         "title": "Chaplets",
+        "sort": 1,
         "subCategories": [
             {
-                "subCategory": "",
-                "prayers": []
+                "subCategory": "Divine Mercy",
+                "sort": 1,
+                "prayers": [
+                    {
+                        "title": "Divine Mercy Chaplet",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Chaplets_DivineMercy_DivineMercyChaplet.html",
+                        "display": true,
+                        "link": "",
+                        "sort": 1
+                    }
+                ]
             }
         ]
     },
     {
         "category": "novenas",
         "title": "Novenas",
+        "sort": 1,
         "subCategories": [
             {
                 "subCategory": "",
@@ -272,6 +320,7 @@
     {
         "category": "litanies",
         "title": "Litanies",
+        "sort": 1,
         "subCategories": [
             {
                 "subCategory": "",
@@ -282,6 +331,7 @@
     {
         "category": "rosary",
         "title": "Rosary",
+        "sort": 1,
         "subCategories": [
             {
                 "subCategory": "rosary",
@@ -292,6 +342,7 @@
     {
         "category": "deliverance",
         "title": "Deliverance",
+        "sort": 1,
         "subCategories": [
             {
                 "subCategory": "deliverance",
