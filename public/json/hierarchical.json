@@ -11,7 +11,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_Common_HailMary.txt",
+                        "filename": "Prayers_General_BlessedVirginMary_HailMary.txt",
                         "display": true,
                         "link": ""
                     },
@@ -20,7 +20,7 @@
                         "alternateTitle": "",
                         "author": "Montfort",
                         "keywords": [],
-                        "filename": "Prayers_Mary_PrayerToMary.txt",
+                        "filename": "Prayers_General_BlessedVirginMary_PrayerToMaryMontfort.txt",
                         "display": true,
                         "link": ""
                     },
@@ -29,7 +29,7 @@
                         "alternateTitle": "Salve Regina",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_Mary_HailHolyQueen.txt",
+                        "filename": "Prayers_General_BlessedVirginMary_HailHolyQueen.txt",
                         "display": true,
                         "link": ""
                     }
@@ -43,7 +43,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_Common_OurFather.txt",
+                        "filename": "Prayers_General_Common_OurFather.txt",
                         "display": true,
                         "link": ""
                     },
@@ -52,7 +52,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_Common_HailMary.txt",
+                        "filename": "Prayers_General_Common_HailMary.txt",
                         "display": true,
                         "link": ""
                     },
@@ -61,7 +61,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_Common_GloryBe.txt",
+                        "filename": "Prayers_General_Common_GloryBe.txt",
                         "display": true,
                         "link": ""
                     },
@@ -70,7 +70,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_Common_ActOfContrition.txt",
+                        "filename": "Prayers_General_Common_ActOfContrition.txt",
                         "display": true,
                         "link": ""
                     }
@@ -85,7 +85,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_FlameOfLove_Unity.txt",
+                        "filename": "Prayers_General_FlameOfLove_Unity.txt",
                         "display": true,
                         "link": ""
                     },
@@ -95,7 +95,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_FlameOfLove_HailMaryFlameOfLove.txt",
+                        "filename": "Prayers_General_FlameOfLove_HailMaryFlameOfLove.txt",
                         "display": true,
                         "link": ""
                     }
@@ -109,7 +109,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_GuardianAngel_GuardianAngelPrayer.txt",
+                        "filename": "Prayers_General_GuardianAngel_GuardianAngelPrayer.txt",
                         "display": true,
                         "link": ""
                     }
@@ -123,7 +123,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_StMichael_StMichaelPrayer.txt",
+                        "filename": "Prayers_General_StMichael_StMichaelPrayer.txt",
                         "display": true,
                         "link": ""
                     },
@@ -132,7 +132,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_StMichael_StMichaelMorningPrayer.txt",
+                        "filename": "Prayers_General_StMichael_StMichaelMorningPrayer.txt",
                         "display": true,
                         "link": ""
                     }
@@ -146,7 +146,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_StJoseph_YearOfStJoseph.txt",
+                        "filename": "Prayers_General_StJoseph_YearOfStJoseph.txt",
                         "display": true,
                         "link": ""
                     }
@@ -160,7 +160,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_Purgatory_PreciousBlood.txt",
+                        "filename": "Prayers_General_Purgatory_PreciousBlood.txt",
                         "display": true,
                         "link": ""
                     },
@@ -169,7 +169,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_Purgatory_StFaustina.txt",
+                        "filename": "Prayers_General_Purgatory_StFaustina.txt",
                         "display": true,
                         "link": ""
                     }
@@ -183,7 +183,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_DivineMercy_HourOfMercy.txt",
+                        "filename": "Prayers_General_DivineMercy_HourOfMercy.txt",
                         "display": true,
                         "link": ""
                     },
@@ -192,7 +192,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_DivineMercy_PrayerOfEntrustment.txt",
+                        "filename": "Prayers_General_DivineMercy_PrayerOfEntrustment.txt",
                         "display": true,
                         "link": ""
                     }
@@ -206,7 +206,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_Creeds_Nicene.txt",
+                        "filename": "Prayers_General_Creeds_Nicene.txt",
                         "display": true,
                         "link": ""
                     },
@@ -215,7 +215,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_Creeds_Apostles.txt",
+                        "filename": "Prayers_General_Creeds_Apostles.txt",
                         "display": true,
                         "link": ""
                     }
@@ -229,7 +229,7 @@
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_PreciousBlood_MostPreciousBlood.txt",
+                        "filename": "Prayers_General_PreciousBlood_MostPreciousBlood.txt",
                         "display": true,
                         "link": ""
                     }
