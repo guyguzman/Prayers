@@ -5,7 +5,7 @@
         "sort": 1,
         "subCategories": [
             {
-                "subCategory": "Blessed Virgin Mary",
+                "title": "Blessed Virgin Mary",
                 "sort": 1,
                 "prayers": [
                     {
@@ -41,7 +41,7 @@
                 ]
             },
             {
-                "subCategory": "Common",
+                "title": "Common",
                 "sort": 1,
                 "prayers": [
                     {
@@ -87,7 +87,7 @@
                 ]
             },
             {
-                "subCategory": "Flame of Love",
+                "title": "Flame of Love",
                 "sort": 1,
                 "prayers": [
                     {
@@ -115,7 +115,7 @@
                 ]
             },
             {
-                "subCategory": "Guardian Angel",
+                "title": "Guardian Angel",
                 "sort": 1,
                 "prayers": [
                     {
@@ -131,7 +131,7 @@
                 ]
             },
             {
-                "subCategory": "St Michael",
+                "title": "St Michael",
                 "sort": 1,
                 "prayers": [
                     {
@@ -157,7 +157,7 @@
                 ]
             },
             {
-                "subCategory": "St Joseph",
+                "title": "St Joseph",
                 "sort": 1,
                 "prayers": [
                     {
@@ -173,7 +173,7 @@
                 ]
             },
             {
-                "subCategory": "Souls In Purgatory",
+                "title": "Souls In Purgatory",
                 "sort": 1,
                 "prayers": [
                     {
@@ -199,7 +199,7 @@
                 ]
             },
             {
-                "subCategory": "Divine Mercy",
+                "title": "Divine Mercy",
                 "sort": 1,
                 "prayers": [
                     {
@@ -225,7 +225,7 @@
                 ]
             },
             {
-                "subCategory": "Creeds",
+                "title": "Creeds",
                 "sort": 1,
                 "prayers": [
                     {
@@ -251,7 +251,7 @@
                 ]
             },
             {
-                "subCategory": "Precious Blood",
+                "title": "Precious Blood",
                 "sort": 1,
                 "prayers": [
                     {
@@ -267,17 +267,17 @@
                 ]
             },
             {
-                "subCategory": "templateOnly",
+                "title": "templateOnly",
                 "sort": 1,
                 "prayers": []
             },
             {
-                "subCategory": "templateOnly",
+                "title": "templateOnly",
                 "sort": 1,
                 "prayers": []
             },
             {
-                "subCategory": "templateOnly",
+                "title": "templateOnly",
                 "sort": 1,
                 "prayers": []
             }
@@ -289,7 +289,7 @@
         "sort": 3,
         "subCategories": [
             {
-                "subCategory": "Divine Mercy",
+                "title": "Divine Mercy",
                 "sort": 1,
                 "prayers": [
                     {
@@ -312,7 +312,7 @@
         "sort": 4,
         "subCategories": [
             {
-                "subCategory": "",
+                "title": "",
                 "prayers": []
             }
         ]
@@ -323,7 +323,7 @@
         "sort": 5,
         "subCategories": [
             {
-                "subCategory": "",
+                "title": "",
                 "prayers": []
             }
         ]
@@ -334,8 +334,19 @@
         "sort": 2,
         "subCategories": [
             {
-                "subCategory": "rosary",
-                "prayers": []
+                "title": "rosary",
+                "prayers": [
+                    {
+                        "title": "TESTING - Replace this prayer",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_Chaplets_DivineMercy_DivineMercyChaplet.html",
+                        "display": true,
+                        "link": "",
+                        "sort": 1
+                    }
+                ]
             }
         ]
     },
@@ -345,10 +356,9 @@
         "sort": 6,
         "subCategories": [
             {
-                "subCategory": "deliverance",
+                "title": "deliverance",
                 "prayers": [
                     {
-                        "category": "Deliverance",
                         "title": "Deliverance from Oppression",
                         "alternateTitle": "",
                         "author": "",

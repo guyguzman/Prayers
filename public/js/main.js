@@ -49,7 +49,11 @@ function testSort() {
         console.log(category.title);
         let subCategoriesArray = Array.from(category.subCategories);
         subCategoriesArray.forEach((subCategory) => {
-          console.log(`...${subCategory.subCategory}`);
+          console.log(`   ${subCategory.title}`);
+          let prayersArray = Array.from(subCategory.prayers);
+          prayersArray.forEach((prayer) => {
+            console.log(`      ${prayer.title}`);
+          });
         });
         console.log(subCategoriesArray);
       });
