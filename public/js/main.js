@@ -16,13 +16,14 @@ let elementOffsetWidth;
 let elementOffsetHeight;
 let elementHamburgerIcon = document.getElementById("hamburgerIcon");
 let elementHamburger = document.getElementById("hamburger");
-console.log("main.js");
+let prayerFilepath = "json/hierarchical.json";
 
 window.onload = async function () {
   resetWidthHeight();
-  await loadPrayers();
-  await loadChaplets();
-  addEventListeners();
+  // await loadPrayers();
+  // await loadChaplets();
+  // addEventListeners();
+  testSort();
 };
 
 function test() {
@@ -33,6 +34,44 @@ function test() {
   processTextFile("prayers/Prayers_DivineWill_MomentOfDeath.txt");
 }
 
+function testSort() {
+  fetch(prayerFilepath)
+    .then((response) => response.json())
+    .then((json) => {
+      console.log(json);
+      let everything = json;
+      // let prayers = everything.prayers;
+      let categoriesArray = Array.from(everything);
+      console.log(categoriesArray);
+      let categoriesSorted = categoriesArray.sort(sortIntegerValues("sort"));
+      console.log(categoriesSorted);
+      categoriesSorted.forEach((category) => {
+        console.log(category.title);
+        let subCategoriesArray = Array.from(category.subCategories);
+        subCategoriesArray.forEach((subCategory) => {
+          console.log(`...${subCategory.subCategory}`);
+        });
+        console.log(subCategoriesArray);
+      });
+      // console.log(categoriesSorted);
+
+      // let prayersSorted = prayers.sort((a, b) => {
+      //   const valueA = a.title.toUpperCase();
+      //   const valueB = b.title.toUpperCase();
+      //   if (valueA < valueA) {
+      //     return -1;
+      //   }
+      //   if (valueA > valueB) {
+      //     return 1;
+      //   }
+      //   return 0;
+      // });
+      // prayersSorted.forEach((prayer) => {
+      //   if (prayer.display == true) insertPrayer(prayer);
+      // });
+      // let beautifyJSON = JSON.stringify(prayers[0], null, 4);
+    });
+}
 function addEventListeners() {
   elementHamburger.addEventListener("click", function () {
     console.log("clicked hamburger");
@@ -62,7 +101,7 @@ async function getTextFile(filename) {
 }
 
 function loadPrayers() {
-  fetch("json/prayers.json")
+  fetch(prayerFilepath)
     .then((response) => response.json())
     .then((json) => {
       let everything = json;
@@ -91,7 +130,7 @@ function loadPrayers() {
 }
 
 function loadChaplets() {
-  fetch("json/prayers.json")
+  fetch(prayerFilepath)
     .then((response) => response.json())
     .then((json) => {
       let everything = json;
@@ -117,6 +156,25 @@ function loadChaplets() {
       });
       let beautifyJSON = JSON.stringify(prayers[0], null, 4);
     });
+}
+
+function sortIntegerValues(key, order = "asc") {
+  return function innerSort(a, b) {
+    if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
+      return 0;
+    }
+
+    const varA = typeof a[key] === "string" ? a[key].toUpperCase() : a[key];
+    const varB = typeof b[key] === "string" ? b[key].toUpperCase() : b[key];
+
+    let comparison = 0;
+    if (varA > varB) {
+      comparison = 1;
+    } else if (varA < varB) {
+      comparison = -1;
+    }
+    return order === "desc" ? comparison * -1 : comparison;
+  };
 }
 
 function sortStringValues(key, order = "asc") {

@@ -286,7 +286,7 @@
     {
         "category": "chaplets",
         "title": "Chaplets",
-        "sort": 1,
+        "sort": 3,
         "subCategories": [
             {
                 "subCategory": "Divine Mercy",
@@ -309,7 +309,7 @@
     {
         "category": "novenas",
         "title": "Novenas",
-        "sort": 1,
+        "sort": 4,
         "subCategories": [
             {
                 "subCategory": "",
@@ -320,7 +320,7 @@
     {
         "category": "litanies",
         "title": "Litanies",
-        "sort": 1,
+        "sort": 5,
         "subCategories": [
             {
                 "subCategory": "",
@@ -331,7 +331,7 @@
     {
         "category": "rosary",
         "title": "Rosary",
-        "sort": 1,
+        "sort": 2,
         "subCategories": [
             {
                 "subCategory": "rosary",
@@ -342,7 +342,7 @@
     {
         "category": "deliverance",
         "title": "Deliverance",
-        "sort": 1,
+        "sort": 6,
         "subCategories": [
             {
                 "subCategory": "deliverance",
