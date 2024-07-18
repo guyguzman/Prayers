@@ -76,7 +76,7 @@ function loadSortedPrayers() {
         let subCategoriesArray = Array.from(category.subCategories);
         subCategoriesArray.forEach((subCategory) => {
           console.log(`   ${subCategory.title}`);
-          if (subCategory.display == true) insertSubCategoryTitle(subCategory);
+          if (subCategory.display == true) createSubCategory(subCategory);
           let prayersArray = Array.from(subCategory.prayers);
           prayersArray.forEach((prayer) => {
             console.log(`      ${prayer.title}`);
@@ -213,14 +213,17 @@ function sortStringValues(key, order = "asc") {
   };
 }
 
-async function insertSubCategoryTitle(title) {
-  divPrayerCategory.className = "prayerCategory";
-  divPrayerCategoryTitle.className = "prayerCategoryTitle";
-  divPrayerCategoryPrayers.className = "prayerCategoryPrayers";
-  divPrayerCategoryTitle.innerHTML = `${prayer.title}`;
-  divPrayerCategory.appendChild(divPrayerCategoryTitle);
-  divPrayerCategory.appendChild(divPrayerCategoryPrayers);
-  prayerContainer.appendChild(divPrayerCategory);
+async function createSubCategory(subCategory) {
+  let divPrayerSubCategory = document.createElement("div");
+  let divPrayerSubCategoryTitle = document.createElement("div");
+  let divPrayerSubCategoryPrayers = document.createElement("div");
+  divPrayerSubCategoryTitle.className = "prayerCategoryTitle";
+  divPrayerSubCategoryTitle.innerHTML = `${subCategory.title}`;
+  divPrayerSubCategoryPrayers.className = "prayerCategoryPrayers";
+  divPrayerSubCategory.appendChild(divPrayerSubCategoryTitle);
+  divPrayerSubCategory.appendChild(divPrayerSubCategoryPrayers);
+  prayerContainer.appendChild(divPrayerSubCategory);
+  return divPrayerSubCategoryPrayers;
 }
 
 async function insertPrayer(prayer) {
