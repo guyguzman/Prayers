@@ -142,6 +142,39 @@ body {
   width: 100%;
 }
 
+.prayerCategory {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+  align-items: center;
+  justify-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.prayerCategoryTitle {
+  grid-row: 1;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  font-size: 45px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.8);
+  color: red;
+}
+
+.prayerCategorySubCategories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
 .prayerSubCategory {
   display: grid;
   grid-template-columns: 1fr;
@@ -169,8 +202,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  /* background-color: rgba(220, 220, 220, .8); */
   gap: 20px;
   grid-row: 2;
   justify-content: center;

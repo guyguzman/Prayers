@@ -71,6 +71,7 @@ function loadSortedPrayers() {
         sortIntegerValues("sort")
       );
       categoriesArraySorted.forEach((category) => {
+        createCategory(category);
         let subCategoriesArray = Array.from(category.subCategories);
         let subCategoriesArraySorted = subCategoriesArray.sort(
           sortIntegerValues("sort")
@@ -89,7 +90,21 @@ function loadSortedPrayers() {
     });
 }
 
-async function createCategory(category) {}
+async function createCategory(category) {
+  let divPrayerCategory = document.createElement("div");
+  divPrayerCategory.className = "prayerCategory";
+  let divPrayerCategoryTitle = document.createElement("div");
+  divPrayerCategoryTitle.className = "prayerCategoryTitle";
+  divPrayerCategoryTitle.innerHTML = `${category.title}`;
+  let divPrayerCategorySubCategories = document.createElement("div");
+  divPrayerCategorySubCategories.className = "prayerCategorySubCategories";
+  divPrayerCategory.appendChild(divPrayerCategoryTitle);
+  divPrayerCategory.appendChild(divPrayerCategorySubCategories);
+  prayerContainer.appendChild(divPrayerCategory);
+  // console.log(divPrayerCategory);
+  return divPrayerCategory;
+}
+
 async function createSubCategory(subCategory) {
   let divPrayerSubCategory = document.createElement("div");
   divPrayerSubCategory.className = "prayerSubCategory";
@@ -104,7 +119,7 @@ async function createSubCategory(subCategory) {
   divPrayerSubCategory.appendChild(divPrayerSubCategoryPrayers);
   prayerContainer.appendChild(divPrayerSubCategory);
   subCategory.prayers.forEach((prayer) => {
-    console.log(`      ${prayer.title}`);
+    // console.log(`      ${prayer.title}`);
     insertPrayer(divPrayerSubCategoryPrayers, prayer);
   });
   return divPrayerSubCategoryPrayers;
