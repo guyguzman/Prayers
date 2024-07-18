@@ -142,7 +142,7 @@ body {
   width: 100%;
 }
 
-.prayerCategory {
+.prayerSubCategory {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 1fr;
@@ -152,7 +152,7 @@ body {
   padding: 20px;
 }
 
-.prayerCategoryTitle {
+.prayerSubCategoryTitle {
   grid-row: 1;
   height: 100%;
   display: grid;
@@ -165,7 +165,7 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.prayerCategoryPrayers {
+.prayerSubCategoryPrayers {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
