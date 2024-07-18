@@ -65,23 +65,18 @@ function loadSortedPrayers() {
   fetch(prayerFilepath)
     .then((response) => response.json())
     .then((json) => {
-      console.log(json);
       let everything = json;
       let categoriesArray = Array.from(everything);
-      console.log(categoriesArray);
       let categoriesSorted = categoriesArray.sort(sortIntegerValues("sort"));
-      console.log(categoriesSorted);
       categoriesSorted.forEach((category) => {
-        console.log(category.title);
         let subCategoriesArray = Array.from(category.subCategories);
         subCategoriesArray.forEach((subCategory) => {
-          console.log(`   ${subCategory.title}`);
           if (subCategory.display == true) createSubCategory(subCategory);
-          let prayersArray = Array.from(subCategory.prayers);
-          prayersArray.forEach((prayer) => {
-            console.log(`      ${prayer.title}`);
-            if (prayer.display == true) insertPrayer(prayer);
-          });
+          // let prayersArray = Array.from(subCategory.prayers);
+          // prayersArray.forEach((prayer) => {
+          //   console.log(`      ${prayer.title}`);
+          //   if (prayer.display == true) insertPrayer(prayer);
+          // });
         });
         console.log(subCategoriesArray);
       });
@@ -223,31 +218,20 @@ async function createSubCategory(subCategory) {
   divPrayerSubCategory.appendChild(divPrayerSubCategoryTitle);
   divPrayerSubCategory.appendChild(divPrayerSubCategoryPrayers);
   prayerContainer.appendChild(divPrayerSubCategory);
+  subCategory.prayers.forEach((prayer) => {
+    console.log(`      ${prayer.title}`);
+    insertPrayer(divPrayerSubCategoryPrayers, prayer);
+  });
   return divPrayerSubCategoryPrayers;
 }
 
-async function insertPrayer(prayer) {
-  let divPrayerCategory = document.createElement("div");
-  let divPrayerCategoryTitle = document.createElement("div");
-  let divPrayerCategoryPrayers = document.createElement("div");
+async function insertPrayer(divPrayerSubCategoryPrayers, prayer) {
+  // let divPrayerCategory = document.createElement("div");
+  // let divPrayerCategoryTitle = document.createElement("div");
+  // let divPrayerCategoryPrayers = document.createElement("div");
   let divPrayer = document.createElement("div");
   let divPrayerTitle = document.createElement("div");
   let divPrayerContent = document.createElement("div");
-
-  // if (prayer.title !== previousPrayerCategory) {
-  //   currentPrayerCategoryIndex += 1;
-  //   previousPrayerCategory = prayer.category;
-  //   divPrayerCategory.className = "prayerCategory";
-  //   divPrayerCategoryTitle.className = "prayerCategoryTitle";
-  //   divPrayerCategoryPrayers.className = "prayerCategoryPrayers";
-  //   divPrayerCategoryTitle.innerHTML = `${prayer.title}`;
-  //   divPrayerCategory.appendChild(divPrayerCategoryTitle);
-  //   divPrayerCategory.appendChild(divPrayerCategoryPrayers);
-  //   prayerContainer.appendChild(divPrayerCategory);
-  //   prayerCategories.push(divPrayerCategoryPrayers);
-  // } else {
-  //   divPrayerCategoryPrayers = prayerCategories[currentPrayerCategoryIndex];
-  // }
 
   let filePath = `prayers/${prayer.filename}`;
 
@@ -280,7 +264,7 @@ async function insertPrayer(prayer) {
       divPrayer.appendChild(divPrayerTitle);
       divPrayer.appendChild(divPrayerContent);
 
-      divPrayerCategoryPrayers.appendChild(divPrayer);
+      divPrayerSubCategoryPrayers.appendChild(divPrayer);
       let prayerClientHeight = divPrayerContent.clientHeight;
       let prayerScrollHeight = divPrayerContent.scrollHeight;
 
