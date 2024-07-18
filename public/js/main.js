@@ -71,13 +71,14 @@ function loadSortedPrayers() {
         sortIntegerValues("sort")
       );
       categoriesArraySorted.forEach((category) => {
-        createCategory(category);
+        let divPrayerCategorySubCategories = createCategory(category);
         let subCategoriesArray = Array.from(category.subCategories);
         let subCategoriesArraySorted = subCategoriesArray.sort(
           sortIntegerValues("sort")
         );
         subCategoriesArraySorted.forEach((subCategory) => {
-          if (subCategory.display == true) createSubCategory(subCategory);
+          if (subCategory.display == true)
+            createSubCategory(divPrayerCategorySubCategories, subCategory);
           // let prayersArray = Array.from(subCategory.prayers);
           // prayersArray.forEach((prayer) => {
           //   console.log(`      ${prayer.title}`);
@@ -90,7 +91,7 @@ function loadSortedPrayers() {
     });
 }
 
-async function createCategory(category) {
+function createCategory(category) {
   let divPrayerCategory = document.createElement("div");
   divPrayerCategory.className = "prayerCategory";
   let divPrayerCategoryTitle = document.createElement("div");
@@ -102,10 +103,10 @@ async function createCategory(category) {
   divPrayerCategory.appendChild(divPrayerCategorySubCategories);
   prayerContainer.appendChild(divPrayerCategory);
   // console.log(divPrayerCategory);
-  return divPrayerCategory;
+  return divPrayerCategorySubCategories;
 }
 
-async function createSubCategory(subCategory) {
+async function createSubCategory(divPrayerCategorySubCategories, subCategory) {
   let divPrayerSubCategory = document.createElement("div");
   divPrayerSubCategory.className = "prayerSubCategory";
   let divPrayerSubCategoryTitle = document.createElement("div");
@@ -117,7 +118,7 @@ async function createSubCategory(subCategory) {
 
   divPrayerSubCategory.appendChild(divPrayerSubCategoryTitle);
   divPrayerSubCategory.appendChild(divPrayerSubCategoryPrayers);
-  prayerContainer.appendChild(divPrayerSubCategory);
+  divPrayerCategorySubCategories.appendChild(divPrayerSubCategory);
   subCategory.prayers.forEach((prayer) => {
     // console.log(`      ${prayer.title}`);
     insertPrayer(divPrayerSubCategoryPrayers, prayer);
