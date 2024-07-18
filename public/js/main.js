@@ -79,13 +79,8 @@ function loadSortedPrayers() {
         subCategoriesArraySorted.forEach((subCategory) => {
           if (subCategory.display == true)
             createSubCategory(divPrayerCategorySubCategories, subCategory);
-          // let prayersArray = Array.from(subCategory.prayers);
-          // prayersArray.forEach((prayer) => {
-          //   console.log(`      ${prayer.title}`);
-          //   if (prayer.display == true) insertPrayer(prayer);
-          // });
         });
-        console.log(subCategoriesArray);
+        // console.log(subCategoriesArray);
       });
       // let beautifyJSON = JSON.stringify(prayers[0], null, 4);
     });
