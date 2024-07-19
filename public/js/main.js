@@ -133,22 +133,6 @@ async function insertPrayer(divPrayerSubCategoryPrayers, prayer) {
   fetch(filePath)
     .then((response) => response.text())
     .then((textString) => {
-      let divFontawesomeExpand = document.createElement("i");
-      let divFontawesomeShrink = document.createElement("i");
-      let divExpandBox = document.createElement("div");
-      let divShrinkBox = document.createElement("div");
-      divFontawesomeExpand.className = "fa-light expand";
-      divFontawesomeExpand.innerHTML = "&#xf31d;";
-      divFontawesomeShrink.className = "fa-light expand";
-      divFontawesomeShrink.innerHTML = "&#xf78c;";
-      divExpandBox.className = "expandBox";
-      divExpandBox.appendChild(divFontawesomeExpand);
-      divShrinkBox.className = "shrinkBox";
-      divShrinkBox.appendChild(divFontawesomeShrink);
-
-      divExpandBox.style.display = "block";
-      divShrinkBox.style.display = "none";
-
       divPrayer.className = "prayer";
       divPrayerTitle.className = "prayerTitle";
       divPrayerContent.className = "prayerContent";
@@ -168,32 +152,50 @@ async function insertPrayer(divPrayerSubCategoryPrayers, prayer) {
         scroll = true;
       }
 
-      if (elementClientWidth > 500) {
-        divPrayerContent.appendChild(divExpandBox);
-        divPrayerContent.appendChild(divShrinkBox);
+      // Add Expand/Shrink Functionality
 
-        divExpandBox.addEventListener("click", function () {
-          elementOverlay.style.display = "grid";
-          elementOverlayText.innerHTML = textString;
-          overlayContentTitle.innerHTML = prayer.title;
-        });
-      }
+      let divFontawesomeExpand = document.createElement("i");
+      let divFontawesomeShrink = document.createElement("i");
+      let divExpandBox = document.createElement("div");
+      let divShrinkBox = document.createElement("div");
+      divFontawesomeExpand.className = "fa-light expand";
+      divFontawesomeExpand.innerHTML = "&#xf31d;";
+      divFontawesomeShrink.className = "fa-light expand";
+      divFontawesomeShrink.innerHTML = "&#xf78c;";
+      divExpandBox.className = "expandBox";
+      divExpandBox.appendChild(divFontawesomeExpand);
+      divShrinkBox.className = "shrinkBox";
+      divShrinkBox.appendChild(divFontawesomeShrink);
 
-      if (elementClientWidth <= 500) {
+      divExpandBox.style.display = "block";
+      divShrinkBox.style.display = "none";
+
+      // if (elementClientWidth > 500) {
+      //   divPrayerContent.appendChild(divExpandBox);
+      //   divPrayerContent.appendChild(divShrinkBox);
+
+      //   divExpandBox.addEventListener("click", function () {
+      //     elementOverlay.style.display = "grid";
+      //     elementOverlayText.innerHTML = textString;
+      //     overlayContentTitle.innerHTML = prayer.title;
+      //   });
+      // }
+
+      // Both Desktop and Mobile display using shrink/expand
+
+      if (elementClientWidth >= 0) {
         if (scroll) {
           divPrayerContent.appendChild(divExpandBox);
           divPrayerContent.appendChild(divShrinkBox);
         }
 
         divExpandBox.addEventListener("click", function () {
-          console.log("clicked expand on mobile");
           divPrayer.style.setProperty("max-Height", "initial");
           divPrayerContent.style.setProperty("max-Height", "initial");
           divExpandBox.style.display = "none";
           divShrinkBox.style.display = "block";
         });
         divShrinkBox.addEventListener("click", function () {
-          console.log("clicked shrink on mobile");
           divPrayer.style.setProperty("max-Height", "400px");
           divPrayerContent.style.setProperty("max-Height", "300px");
           divExpandBox.style.display = "block";
