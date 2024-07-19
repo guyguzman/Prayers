@@ -22,7 +22,7 @@ window.onload = async function () {
   resetWidthHeight();
   // await loadPrayers();
   // await loadChaplets();
-  // addEventListeners();
+  addEventListeners();
   loadSortedPrayers();
 };
 
@@ -115,7 +115,6 @@ async function createSubCategory(divPrayerCategorySubCategories, subCategory) {
   divPrayerSubCategory.appendChild(divPrayerSubCategoryPrayers);
   divPrayerCategorySubCategories.appendChild(divPrayerSubCategory);
   subCategory.prayers.forEach((prayer) => {
-    // console.log(`      ${prayer.title}`);
     insertPrayer(divPrayerSubCategoryPrayers, prayer);
   });
   return divPrayerSubCategoryPrayers;
@@ -228,64 +227,6 @@ async function getTextFile(filename) {
     .then((response) => response.text())
     .then((textString) => {
       return textString;
-    });
-}
-
-function loadPrayers() {
-  fetch(prayerFilepath)
-    .then((response) => response.json())
-    .then((json) => {
-      let everything = json;
-      let prayers = everything.prayers;
-      console.log(prayers);
-      let prayersSorted2 = prayers.sort(sortStringValues("category", "asc"));
-      console.log(prayersSorted2);
-      let prayersSorted = prayers.sort((a, b) => {
-        const valueA = a.title.toUpperCase();
-        const valueB = b.title.toUpperCase();
-        if (valueA < valueA) {
-          return -1;
-        }
-        if (valueA > valueB) {
-          return 1;
-        }
-        return 0;
-      });
-      console.log(prayersSorted);
-      prayersSorted.forEach((prayer) => {
-        // console.log(prayer);
-        if (prayer.display == true) insertPrayer(prayer);
-      });
-      let beautifyJSON = JSON.stringify(prayers[0], null, 4);
-    });
-}
-
-function loadChaplets() {
-  fetch(prayerFilepath)
-    .then((response) => response.json())
-    .then((json) => {
-      let everything = json;
-      let prayers = everything.chaplets;
-      console.log(prayers);
-      let prayersSorted2 = prayers.sort(sortStringValues("category", "asc"));
-      console.log(prayersSorted2);
-      let prayersSorted = prayers.sort((a, b) => {
-        const valueA = a.title.toUpperCase();
-        const valueB = b.title.toUpperCase();
-        if (valueA < valueA) {
-          return -1;
-        }
-        if (valueA > valueB) {
-          return 1;
-        }
-        return 0;
-      });
-      console.log(prayersSorted);
-      prayersSorted.forEach((prayer) => {
-        // console.log(prayer);
-        if (prayer.display == true) insertPrayer(prayer);
-      });
-      let beautifyJSON = JSON.stringify(prayers[0], null, 4);
     });
 }
 

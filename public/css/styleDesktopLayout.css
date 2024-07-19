@@ -1,0 +1,145 @@
+:root {
+  --prayerMaxHeight: 400px;
+  --prayerMinHeight: 400px;
+  --prayerContentMaxHeight: 300px;
+  --prayerContentMinHeight: 300px;
+}
+
+@font-face {
+  font-family: "RobotoFlex";
+  src: url("../fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "KozukaGothicProB";
+  src: url("../fonts/Kozuka_Gothic_Pro/KozGoProBold.otf") format("opentype");
+}
+
+.KozukaGothicProB {
+  font-family: "KozukaGothicProB";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: RobotoFlex;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  right: -100vw;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hamburgerIcon {
+  position: fixed;
+  right: 40px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 101;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.overlayContent {
+  width: 70%;
+  max-height: 90vh;
+  min-width: 800px;
+  padding: 50px;
+  background-color: #e2e5e7;
+  column-count: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.overlayContentTitle {
+  width: 100%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.overlayContentText {
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 24px;
+  column-count: 3;
+}
+
+.overlayClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.overlayClose:hover {
+  color: #ff0000;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/MadonnaChild_Landscape.jpg");
+  background-size: cover;
+  background-position: center top;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(30%);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.aboutTitle {
+  font-size: 150px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.7);
+}

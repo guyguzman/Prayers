@@ -1,0 +1,198 @@
+.prayerContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.prayerCategory {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+  align-items: center;
+  justify-items: center;
+  box-sizing: border-box;
+  padding: 0px 0 40px 0px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.prayerCategoryTitle {
+  grid-row: 1;
+  height: 100%;
+  width: 50%;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  font-size: 70px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-color: white;
+  margin-bottom: 60px;
+}
+
+.prayerCategorySubCategories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+.prayerSubCategory {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+  align-items: center;
+  justify-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.prayerSubCategoryTitle {
+  grid-row: 1;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.prayerSubCategoryPrayers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  grid-row: 2;
+  justify-content: center;
+  align-content: center;
+}
+
+.prayer {
+  width: clamp(360px, 90%, 450px);
+  max-height: var(--prayerMaxHeight);
+  background-color: #f0f2f5;
+  padding: 20px 20px 40px 20px;
+  box-sizing: border-box;
+  background-color: rgba(220, 225, 230, 0.9);
+  position: relative;
+}
+
+.prayerTitle {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 900;
+}
+
+.prayerContent {
+  overflow-y: auto;
+  max-height: var(--prayerContentMaxHeight);
+  line-height: 1.6em;
+  font-size: 1em;
+  font-weight: 300;
+  /* background-color: rgba(255, 0, 0, 0.1); */
+}
+
+.expand {
+  font-size: 20px;
+  color: #808080;
+  position: relative;
+}
+
+/* Chaplets */
+
+.expandBox {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+}
+
+.shrinkBox {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+}
+
+.chapletStep {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.chapletStepTitleNumber {
+  font-size: 24px;
+  display: grid;
+  place-items: center;
+  margin-top: 2px;
+}
+
+.chapletStepTitle {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.chapletStepTitleText {
+  display: grid;
+  align-items: center;
+}
+
+.chapletStepBody {
+  grid-column: 1;
+  grid-row: 2;
+  margin-left: 34px;
+}
+
+.chapletStepBodyParagraph {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.chapletRepeat {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.chapletStepBead {
+  font-weight: 300;
+}
+
+chapletSubStep {
+  padding-left: 20px;
+}
+
+.chapletSubStepTitle {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.chapletSubStepText {
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.chapletImage {
+  /* width: 360px; */
+  height: 700px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
