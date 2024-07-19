@@ -124,6 +124,14 @@
   /* background-color: rgba(255, 0, 0, 0.1); */
 }
 
+.prayerImage {
+  /* width: 360px; */
+  height: 700px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .prayerStep {
   display: grid;
   grid-template-columns: 1fr;
@@ -185,12 +193,4 @@ prayerSubStep {
 .prayerSubStepText {
   font-weight: 400;
   margin-bottom: 12px;
-}
-
-.prayerImage {
-  /* width: 360px; */
-  height: 700px;
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
