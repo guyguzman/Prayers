@@ -282,18 +282,6 @@
                 "sort": 1,
                 "display": true,
                 "prayers": []
-            },
-            {
-                "title": "templateOnly",
-                "sort": 1,
-                "display": true,
-                "prayers": []
-            },
-            {
-                "title": "templateOnly",
-                "sort": 1,
-                "display": true,
-                "prayers": []
             }
         ]
     },
@@ -357,16 +345,16 @@
         "display": true,
         "subCategories": [
             {
-                "title": "rosary",
+                "title": "Rosary",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
-                        "title": "TESTING - Replace this prayer",
+                        "title": "Rosary",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
-                        "filename": "Prayers_Chaplets_DivineMercy_DivineMercyChaplet.html",
+                        "filename": "Prayers_Rosary_Rosary_Rosary.html",
                         "link": "",
                         "sort": 1,
                         "display": true
@@ -382,7 +370,7 @@
         "display": true,
         "subCategories": [
             {
-                "title": "",
+                "title": "Oppression",
                 "sort": 1,
                 "display": true,
                 "prayers": [

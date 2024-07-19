@@ -125,7 +125,7 @@ div {
   top: 0;
   left: 0;
   z-index: -1;
-  filter: brightness(50%);
+  filter: brightness(30%);
 }
 
 .about {
@@ -140,7 +140,7 @@ div {
 
 .aboutTitle {
   font-size: 150px;
-  font-weight: 600;
+  font-weight: 200;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -169,19 +169,20 @@ div {
 .prayerCategoryTitle {
   grid-row: 1;
   height: 100%;
-  width: 100%;
+  width: 50%;
+  min-width: 300px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   align-items: center;
   justify-items: center;
-  font-size: 60px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
-  color: red;
-  color: black;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 70px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-color: white;
+  margin-bottom: 60px;
 }
 
 .prayerCategorySubCategories {
@@ -211,9 +212,9 @@ div {
   grid-template-rows: 1fr;
   align-items: center;
   justify-items: center;
-  font-size: 45px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .prayerSubCategoryPrayers {
@@ -349,12 +350,14 @@ chapletSubStep {
 
   .background {
     background-position-x: 45%;
-    filter: brightness(70%);
+    filter: brightness(40%);
   }
 
   .aboutTitle {
     font-size: 25vw;
     align-self: end;
+    font-weight: 200;
+
     margin-bottom: 150px;
   }
 
@@ -362,6 +365,18 @@ chapletSubStep {
     font-size: 40px;
   }
 
+  .prayerSubCategoryTitle {
+    grid-row: 1;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+  }
   .expand {
     font-size: 20px;
     color: #808080;
