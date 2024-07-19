@@ -132,6 +132,17 @@
   background-repeat: no-repeat;
 }
 
+.prayerBody {
+  grid-column: 1;
+  grid-row: 2;
+  margin-left: 0px;
+}
+
+.prayerBodyParagraph {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
 .prayerStep {
   display: grid;
   grid-template-columns: 1fr;
