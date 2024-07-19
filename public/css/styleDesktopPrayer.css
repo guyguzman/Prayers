@@ -8,6 +8,24 @@
   width: 100%;
 }
 
+.expand {
+  font-size: 20px;
+  color: #808080;
+  position: relative;
+}
+
+.expandBox {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+}
+
+.shrinkBox {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+}
+
 .prayerCategory {
   display: grid;
   grid-template-columns: 1fr;
@@ -106,25 +124,7 @@
   /* background-color: rgba(255, 0, 0, 0.1); */
 }
 
-.expand {
-  font-size: 20px;
-  color: #808080;
-  position: relative;
-}
-
-.expandBox {
-  position: absolute;
-  right: 10px;
-  bottom: 3px;
-}
-
-.shrinkBox {
-  position: absolute;
-  right: 10px;
-  bottom: 3px;
-}
-
-.chapletStep {
+.prayerStep {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr;
@@ -135,59 +135,59 @@
   width: 100%;
 }
 
-.chapletStepTitleNumber {
+.prayerStepTitleNumber {
   font-size: 24px;
   display: grid;
   place-items: center;
   margin-top: 2px;
 }
 
-.chapletStepTitle {
+.prayerStepTitle {
   display: flex;
   width: 100%;
   gap: 10px;
 }
 
-.chapletStepTitleText {
+.prayerStepTitleText {
   display: grid;
   align-items: center;
 }
 
-.chapletStepBody {
+.prayerStepBody {
   grid-column: 1;
   grid-row: 2;
   margin-left: 34px;
 }
 
-.chapletStepBodyParagraph {
+.prayerStepBodyParagraph {
   font-weight: 400;
   margin-bottom: 10px;
 }
 
-.chapletRepeat {
+.prayerRepeat {
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.chapletStepBead {
+.prayerStepBead {
   font-weight: 300;
 }
 
-chapletSubStep {
+prayerSubStep {
   padding-left: 20px;
 }
 
-.chapletSubStepTitle {
+.prayerSubStepTitle {
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.chapletSubStepText {
+.prayerSubStepText {
   font-weight: 400;
   margin-bottom: 12px;
 }
 
-.chapletImage {
+.prayerImage {
   /* width: 360px; */
   height: 700px;
   background-position: center center;
