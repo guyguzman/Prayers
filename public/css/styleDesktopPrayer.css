@@ -8,10 +8,11 @@
   width: 100%;
 }
 
-.expand {
+.expandShrink {
   font-size: 20px;
   color: #808080;
   position: relative;
+  color: red;
 }
 
 .expandBox {

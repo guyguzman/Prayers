@@ -17,6 +17,15 @@ let elementOffsetHeight;
 let elementHamburgerIcon = document.getElementById("hamburgerIcon");
 let elementHamburger = document.getElementById("hamburger");
 let prayerFilepath = "json/hierarchical.json";
+let fontAwesomeExpandIcon = "&#xf31d;";
+let fontAwesomeShrinkIcon = "&#xf78c;";
+let fontAwesomePlusIcon = "&#xf067;";
+let fontAwesomeMinusIcon = "&#xf068;";
+
+let sizeExpandIconClass = "fa-light expandShrink";
+let sizeShrinkIconClass = "fa-light expandShrink";
+let sizeExpandIconContent = fontAwesomePlusIcon;
+let sizeShrinkIconContent = fontAwesomeMinusIcon;
 
 window.onload = async function () {
   resetWidthHeight();
@@ -158,10 +167,14 @@ async function insertPrayer(divPrayerSubCategoryPrayers, prayer) {
       let divFontawesomeShrink = document.createElement("i");
       let divExpandBox = document.createElement("div");
       let divShrinkBox = document.createElement("div");
-      divFontawesomeExpand.className = "fa-light expand";
-      divFontawesomeExpand.innerHTML = "&#xf31d;";
-      divFontawesomeShrink.className = "fa-light expand";
-      divFontawesomeShrink.innerHTML = "&#xf78c;";
+      divFontawesomeExpand.className = sizeExpandIconClass;
+      // divFontawesomeExpand.innerHTML = "&#xf31d;";
+      divFontawesomeExpand.innerHTML = sizeExpandIconContent;
+
+      divFontawesomeShrink.className = sizeExpandIconClass;
+      // divFontawesomeShrink.innerHTML = "&#xf78c;";
+      divFontawesomeShrink.innerHTML = sizeShrinkIconContent;
+
       divExpandBox.className = "expandBox";
       divExpandBox.appendChild(divFontawesomeExpand);
       divShrinkBox.className = "shrinkBox";
