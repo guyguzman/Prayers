@@ -2,16 +2,19 @@
     {
         "category": "general",
         "title": "General Prayers",
+        "subTitle": "",
         "sort": 1,
         "display": true,
         "subCategories": [
             {
                 "title": "Blessed Virgin Mary",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "Hail Mary",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -22,6 +25,7 @@
                     },
                     {
                         "title": "Prayer to Mary (Montfort)",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "Montfort",
                         "keywords": [],
@@ -32,6 +36,7 @@
                     },
                     {
                         "title": "Hail Holy Queen",
+                        "subTitle": "",
                         "alternateTitle": "Salve Regina",
                         "author": "",
                         "keywords": [],
@@ -44,11 +49,13 @@
             },
             {
                 "title": "Common",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "Our Father",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -59,6 +66,7 @@
                     },
                     {
                         "title": "Hail Mary",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -69,6 +77,7 @@
                     },
                     {
                         "title": "Glory Be",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -79,6 +88,7 @@
                     },
                     {
                         "title": "Act of Contrition",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -91,12 +101,14 @@
             },
             {
                 "title": "Flame of Love",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "category": "Flame of Love",
                         "title": "Unity",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -108,6 +120,7 @@
                     {
                         "category": "Flame of Love",
                         "title": "Hail Mary (Flame of Love)",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -120,11 +133,13 @@
             },
             {
                 "title": "Guardian Angel",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "Guardian Angel Prayer",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -137,11 +152,13 @@
             },
             {
                 "title": "St Michael",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "St Michael Prayer",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -152,6 +169,7 @@
                     },
                     {
                         "title": "St Michael Morning Prayer",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -164,11 +182,13 @@
             },
             {
                 "title": "St Joseph",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "Year Of St Joseph",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -181,11 +201,13 @@
             },
             {
                 "title": "Souls In Purgatory",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "Precious Blood",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -196,10 +218,22 @@
                     },
                     {
                         "title": "St Faustina",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
                         "filename": "Prayers_General_Purgatory_StFaustina.html",
+                        "link": "",
+                        "sort": 1,
+                        "display": true
+                    },
+                    {
+                        "title": "St Mechtilde",
+                        "subTitle": "",
+                        "alternateTitle": "",
+                        "author": "",
+                        "keywords": [],
+                        "filename": "Prayers_General_Purgatory_StMechtilde.html",
                         "link": "",
                         "sort": 1,
                         "display": true
@@ -208,11 +242,13 @@
             },
             {
                 "title": "Divine Mercy",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "Divine Mercy 3 O’Clock Prayer",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -223,6 +259,7 @@
                     },
                     {
                         "title": "Prayer of Entrustment to Divine Mercy",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -235,11 +272,13 @@
             },
             {
                 "title": "Creeds",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "Nicene Creed",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -250,6 +289,7 @@
                     },
                     {
                         "title": "Apostles Creed",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -262,11 +302,13 @@
             },
             {
                 "title": "Precious Blood",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "Most Precious Blood",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -279,6 +321,7 @@
             },
             {
                 "title": "templateOnly",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": []
@@ -288,16 +331,19 @@
     {
         "category": "chaplets",
         "title": "Chaplets",
+        "subTitle": "",
         "sort": 3,
         "display": true,
         "subCategories": [
             {
                 "title": "Divine Mercy",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "Divine Mercy Chaplet",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -313,11 +359,13 @@
     {
         "category": "novenas",
         "title": "Novenas",
+        "subTitle": "",
         "sort": 4,
         "display": true,
         "subCategories": [
             {
                 "title": "",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": []
@@ -327,11 +375,13 @@
     {
         "category": "litanies",
         "title": "Litanies",
+        "subTitle": "",
         "sort": 5,
         "display": true,
         "subCategories": [
             {
                 "title": "",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": []
@@ -341,16 +391,19 @@
     {
         "category": "rosary",
         "title": "Rosary",
+        "subTitle": "",
         "sort": 2,
         "display": true,
         "subCategories": [
             {
                 "title": "Rosary",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "Rosary",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],
@@ -366,16 +419,19 @@
     {
         "category": "deliverance",
         "title": "Deliverance",
+        "subTitle": "",
         "sort": 6,
         "display": true,
         "subCategories": [
             {
                 "title": "Oppression",
+                "subTitle": "",
                 "sort": 1,
                 "display": true,
                 "prayers": [
                     {
                         "title": "Deliverance from Oppression",
+                        "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
                         "keywords": [],

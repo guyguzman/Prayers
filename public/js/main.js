@@ -22,8 +22,8 @@ let fontAwesomeShrinkIcon = "&#xf78c;";
 let fontAwesomePlusIcon = "&#xf067;";
 let fontAwesomeMinusIcon = "&#xf068;";
 
-let sizeExpandIconClass = "fa-light expandShrink";
-let sizeShrinkIconClass = "fa-light expandShrink";
+let sizeExpandIconClass = "fa-sharp fa-solid expandShrink";
+let sizeShrinkIconClass = "fa-sharp fa-solid expandShrink";
 let sizeExpandIconContent = fontAwesomePlusIcon;
 let sizeShrinkIconContent = fontAwesomeMinusIcon;
 
