@@ -3,6 +3,9 @@
   --prayerMinHeight: 400px;
   --prayerContentMaxHeight: 300px;
   --prayerContentMinHeight: 300px;
+  --prayerBeadRed: #bf0000;
+  --prayerBeadBlue: #007abf;
+  --stepIndent: 34px;
 }
 
 @font-face {

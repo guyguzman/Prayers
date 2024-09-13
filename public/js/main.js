@@ -134,22 +134,30 @@ async function insertPrayer(divPrayerSubCategoryPrayers, prayer) {
   // let divPrayerCategoryTitle = document.createElement("div");
   // let divPrayerCategoryPrayers = document.createElement("div");
   let divPrayer = document.createElement("div");
-  let divPrayerTitle = document.createElement("div");
   let divPrayerContent = document.createElement("div");
+  let divPrayerName = document.createElement("div");
+  let divPrayerNameTitle = document.createElement("div");
+  let divPrayerNameSubTitle = document.createElement("div");
 
   let filePath = `prayers/${prayer.filename}`;
 
   fetch(filePath)
     .then((response) => response.text())
-    .then((textString) => {
+    .then((html) => {
       divPrayer.className = "prayer";
-      divPrayerTitle.className = "prayerTitle";
+      divPrayerName.className = "prayerName";
+      divPrayerNameTitle.className = "prayerNameTitle";
+      divPrayerNameSubTitle.className = "prayerNameSubTitle";
       divPrayerContent.className = "prayerContent";
 
-      divPrayerTitle.innerHTML = `${prayer.title}`;
-      divPrayerContent.innerHTML = textString;
+      divPrayerNameTitle.innerHTML = `${prayer.title}`;
+      divPrayerNameSubTitle.innerHTML = `${prayer.subTitle}`;
+      divPrayerName.appendChild(divPrayerNameTitle);
+      divPrayerName.appendChild(divPrayerNameSubTitle);
 
-      divPrayer.appendChild(divPrayerTitle);
+      divPrayerContent.innerHTML = html;
+
+      divPrayer.appendChild(divPrayerName);
       divPrayer.appendChild(divPrayerContent);
 
       divPrayerSubCategoryPrayers.appendChild(divPrayer);
@@ -168,11 +176,9 @@ async function insertPrayer(divPrayerSubCategoryPrayers, prayer) {
       let divExpandBox = document.createElement("div");
       let divShrinkBox = document.createElement("div");
       divFontawesomeExpand.className = sizeExpandIconClass;
-      // divFontawesomeExpand.innerHTML = "&#xf31d;";
       divFontawesomeExpand.innerHTML = sizeExpandIconContent;
 
       divFontawesomeShrink.className = sizeExpandIconClass;
-      // divFontawesomeShrink.innerHTML = "&#xf78c;";
       divFontawesomeShrink.innerHTML = sizeShrinkIconContent;
 
       divExpandBox.className = "expandBox";
