@@ -1,7 +1,12 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 let previousPrayerCategory = "";
 let elementPrayerContainer = document.getElementById("prayerContainer");
 let currentPrayerCategoryIndex = -1;
 let prayerCategories = [];
+let elementMenu = document.getElementById("menu");
 let elementOverlay = document.getElementById("overlay");
 let elementOverlayContent = document.getElementById("overlayContent");
 let elementOverlayTitle = document.getElementById("overlayContentTitle");
@@ -21,18 +26,20 @@ let fontAwesomeExpandIcon = "&#xf31d;";
 let fontAwesomeShrinkIcon = "&#xf78c;";
 let fontAwesomePlusIcon = "&#xf067;";
 let fontAwesomeMinusIcon = "&#xf068;";
+let fontAwesomeChervronUp = "&#xf077;";
+let fontAwesomeChervronDown = "&#xf078;";
 
 let sizeExpandIconClass = "fa-sharp fa-solid expandShrink";
 let sizeShrinkIconClass = "fa-sharp fa-solid expandShrink";
-let sizeExpandIconContent = fontAwesomePlusIcon;
-let sizeShrinkIconContent = fontAwesomeMinusIcon;
+let sizeExpandIconContent = fontAwesomeChervronDown;
+let sizeShrinkIconContent = fontAwesomeChervronUp;
 
 window.onload = async function () {
   resetWidthHeight();
   // await loadPrayers();
   // await loadChaplets();
   addEventListeners();
-  loadSortedPrayers();
+  loadPrayers();
 };
 
 function test() {
@@ -70,7 +77,7 @@ function testSort() {
     });
 }
 
-function loadSortedPrayers() {
+function loadPrayers() {
   fetch(prayerFilepath)
     .then((response) => response.json())
     .then((json) => {
@@ -225,8 +232,21 @@ async function insertPrayer(divPrayerSubCategoryPrayers, prayer) {
 }
 function addEventListeners() {
   elementHamburger.addEventListener("click", function () {
-    console.log("clicked hamburger");
     hamburger.classList.toggle("is-active");
+    let menuVisible = elementHamburger.classList.contains("is-active");
+    let menuDimensions = elementMenu.getBoundingClientRect();
+    console.log(menuDimensions);
+
+    if (menuVisible) {
+      gsap.to(elementMenu, { duration: 0.5, right: 0 });
+    }
+
+    if (!menuVisible) {
+      gsap.to(elementMenu, {
+        duration: 0.5,
+        right: menuDimensions.width * -1,
+      });
+    }
   });
 
   elementOverlayClose.addEventListener("click", function () {

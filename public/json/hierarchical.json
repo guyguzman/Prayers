@@ -36,7 +36,7 @@
                     },
                     {
                         "title": "Hail Holy Queen",
-                        "subTitle": "",
+                        "subTitle": "Salve Regina",
                         "alternateTitle": "Salve Regina",
                         "author": "",
                         "keywords": [],
@@ -247,7 +247,7 @@
                 "display": true,
                 "prayers": [
                     {
-                        "title": "Divine Mercy 3 O’Clock Prayer",
+                        "title": "3 O’Clock Prayer",
                         "subTitle": "",
                         "alternateTitle": "",
                         "author": "",
@@ -258,7 +258,7 @@
                         "display": true
                     },
                     {
-                        "title": "Prayer of Entrustment to Divine Mercy",
+                        "title": "Entrustment to Divine Mercy",
                         "subTitle": "",
                         "alternateTitle": "",
                         "author": "",

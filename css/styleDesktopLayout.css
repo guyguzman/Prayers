@@ -6,6 +6,9 @@
   --prayerBeadRed: #bf0000;
   --prayerBeadBlue: #007abf;
   --stepIndent: 34px;
+  --scrollBarTrack: #c0c2c5;
+  --scrollBarThumb: #808285;
+  /* --scrollBarThumb: red; */
 }
 
 @font-face {
@@ -21,6 +24,16 @@
 
 .KozukaGothicProB {
   font-family: "KozukaGothicProB";
+}
+
+.blueBead {
+  color: var(--prayerBeadBlue);
+  margin-left: 10px;
+}
+
+.redBead {
+  color: var(--prayerBeadRed);
+  margin-left: 10px;
 }
 
 body {
