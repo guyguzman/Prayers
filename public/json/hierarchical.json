@@ -320,10 +320,10 @@
                 ]
             },
             {
-                "title": "templateOnly",
+                "title": "SubCategory Template Only",
                 "subTitle": "",
                 "sort": 1,
-                "display": true,
+                "display": false,
                 "prayers": []
             }
         ]

@@ -47,13 +47,13 @@ div {
 }
 
 .menuContainer {
+  display: grid;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   right: -100vw;
-  display: grid;
   justify-items: center;
   align-items: start;
   z-index: 100;
@@ -65,15 +65,17 @@ div {
   display: flex;
   flex-direction: column;
   /* background-color: #404245; */
-  width: 300px;
+  width: 90vw;
+  max-width: 400px;
   padding: 0 0 50px 0;
 }
 
 .menuTitle {
   color: white;
-  font-size: 24px;
+  font-size: 60px;
   margin: 50px 0 50px 0;
   text-align: center;
+  font-weight: 700;
 }
 
 .menuList {
@@ -89,18 +91,22 @@ div {
   color: #f2f4f5;
   font-size: 24px;
   margin: 30px 0 20px 0;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .menuItemSubCategory {
   color: #d2d4d5;
   font-size: 20px;
   margin: 20px 0 15px 30px;
+  font-weight: 500;
 }
 
 .menuItemPrayer {
   color: #b2b4b5;
   font-size: 16px;
   margin: 15px 0 10px 60px;
+  font-weight: 400;
 }
 
 .navbar {
