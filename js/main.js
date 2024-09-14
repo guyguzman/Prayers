@@ -6,7 +6,7 @@ let previousPrayerCategory = "";
 let elementPrayerContainer = document.getElementById("prayerContainer");
 let currentPrayerCategoryIndex = -1;
 let prayerCategories = [];
-let elementMenu = document.getElementById("menu");
+let elementMenu = document.getElementById("menuContainer");
 let elementOverlay = document.getElementById("overlay");
 let elementOverlayContent = document.getElementById("overlayContent");
 let elementOverlayTitle = document.getElementById("overlayContentTitle");
@@ -33,6 +33,8 @@ let sizeExpandIconClass = "fa-sharp fa-solid expandShrink";
 let sizeShrinkIconClass = "fa-sharp fa-solid expandShrink";
 let sizeExpandIconContent = fontAwesomeChervronDown;
 let sizeShrinkIconContent = fontAwesomeChervronUp;
+
+let elementMenuList = document.getElementById("menuList");
 
 window.onload = async function () {
   resetWidthHeight();
@@ -114,10 +116,14 @@ function createCategory(category) {
   divPrayerCategory.appendChild(divPrayerCategorySubCategories);
   prayerContainer.appendChild(divPrayerCategory);
   // console.log(divPrayerCategory);
+  let divMenuCategory = document.createElement("div");
+  divMenuCategory.className = "menuItemCategory";
+  divMenuCategory.innerHTML = `${category.title}`;
+  elementMenuList.appendChild(divMenuCategory);
   return divPrayerCategorySubCategories;
 }
 
-async function createSubCategory(divPrayerCategorySubCategories, subCategory) {
+function createSubCategory(divPrayerCategorySubCategories, subCategory) {
   let divPrayerSubCategory = document.createElement("div");
   divPrayerSubCategory.className = "prayerSubCategory";
   let divPrayerSubCategoryTitle = document.createElement("div");
@@ -130,16 +136,20 @@ async function createSubCategory(divPrayerCategorySubCategories, subCategory) {
   divPrayerSubCategory.appendChild(divPrayerSubCategoryTitle);
   divPrayerSubCategory.appendChild(divPrayerSubCategoryPrayers);
   divPrayerCategorySubCategories.appendChild(divPrayerSubCategory);
+
+  let divMenuSubCategory = document.createElement("div");
+  divMenuSubCategory.className = "menuItemSubCategory";
+  divMenuSubCategory.innerHTML = `${subCategory.title}`;
+  elementMenuList.appendChild(divMenuSubCategory);
+
   subCategory.prayers.forEach((prayer) => {
     insertPrayer(divPrayerSubCategoryPrayers, prayer);
   });
+
   return divPrayerSubCategoryPrayers;
 }
 
-async function insertPrayer(divPrayerSubCategoryPrayers, prayer) {
-  // let divPrayerCategory = document.createElement("div");
-  // let divPrayerCategoryTitle = document.createElement("div");
-  // let divPrayerCategoryPrayers = document.createElement("div");
+function insertPrayer(divPrayerSubCategoryPrayers, prayer) {
   let divPrayer = document.createElement("div");
   let divPrayerContent = document.createElement("div");
   let divPrayerName = document.createElement("div");
@@ -175,6 +185,13 @@ async function insertPrayer(divPrayerSubCategoryPrayers, prayer) {
       if (prayerScrollHeight > prayerClientHeight) {
         scroll = true;
       }
+
+      // Add to Menu
+
+      let divMenuPrayer = document.createElement("div");
+      divMenuPrayer.className = "menuItemPrayer";
+      divMenuPrayer.innerHTML = `${prayer.title}`;
+      elementMenuList.appendChild(divMenuPrayer);
 
       // Add Expand/Shrink Functionality
 
