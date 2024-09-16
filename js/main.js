@@ -39,14 +39,13 @@ let elementMenuList = document.getElementById("menuList");
 let menuDimensions = elementMenu.getBoundingClientRect();
 let prayerLinkSeed = 0;
 
-let menuObject = {};
+let menuObjects = [];
 
 window.onload = async function () {
   resetWidthHeight();
   addEventListeners();
   loadPrayers();
   window.scrollBy(0, 100);
-  // displayMenu();
 };
 
 function test() {
@@ -91,27 +90,24 @@ function loadPrayers() {
       let menuItemsCategory = json;
       menuItemsCategory.sort(sortIntegerValues("sort"));
       menuItemsCategory.forEach((category) => {
-        console.log(category);
+        menuObjects.push(category);
         let divPrayerCategorySubCategories = createCategory(category);
-        let subCategoriesArray = Array.from(category.subCategories);
-        let subCategoriesArraySorted = subCategoriesArray.sort(
+        let subCategoriesArray = category.subCategories.sort(
           sortIntegerValues("sort")
         );
-        subCategoriesArraySorted.forEach((subCategory) => {
+        subCategoriesArray.forEach((subCategory) => {
           if (subCategory.display == true)
             createSubCategory(divPrayerCategorySubCategories, subCategory);
         });
       });
+    })
+    .then(() => {
+      console.log("Menu Objects");
+      console.log(menuObjects);
     });
 }
 
-let menuItems = {
-  categories: [],
-  subCategories: [],
-  prayers: [],
-};
-
-function displayMenu() {
+function displayMenuFromJson() {
   let now = new Date();
   let showCategoryEmpty = false;
   let showSubCategoryEmpty = false;
@@ -161,6 +157,53 @@ function displayMenu() {
     .then(() => {});
 }
 
+function displayMenu() {
+  let now = new Date();
+  let showCategoryEmpty = false;
+  let showSubCategoryEmpty = false;
+  {
+    let menuArray = menuObjects;
+    let menuCategoriesSorted = menuArray.sort(sortIntegerValues("sort"));
+    menuCategoriesSorted.forEach((category) => {
+      let displayCategory = true;
+      if (category.display === false) displayCategory = false;
+      if (category.subCategories.length === 0) displayCategory = false;
+      if (category.subCategories.length == 1) {
+        if (category.subCategories[0].prayers.length === 0)
+          displayCategory = false;
+      }
+
+      if (displayCategory || showCategoryEmpty) {
+        appendMenuCategory(category);
+      }
+
+      let menuSubCategories = Array.from(category.subCategories);
+      menuSubCategories = category.subCategories;
+      let menuSubCategoriesSorted = menuSubCategories.sort(
+        sortIntegerValues("sort")
+      );
+
+      menuSubCategoriesSorted.forEach((subCategory) => {
+        let displaySubCategory = true;
+        if (subCategory.display === false) displaySubCategory = false;
+        if (subCategory.prayers.length === 0) displaySubCategory = false;
+        if (displaySubCategory) {
+          appendMenuSubCategory(subCategory);
+        }
+        let menuPrayers = subCategory.prayers;
+        let menuPrayersSorted = menuPrayers.sort(sortIntegerValues("sort"));
+        menuPrayersSorted.forEach((prayer) => {
+          let displayPrayer = true;
+          if (prayer.display === false) displayPrayer = false;
+          if (displayPrayer) {
+            appendMenuPrayer(prayer);
+          }
+        });
+      });
+    });
+  }
+}
+
 function appendMenuCategory(category, target) {
   let divMenuCategory = document.createElement("div");
   divMenuCategory.className = "menuItemCategory";
@@ -205,6 +248,7 @@ function createCategory(category) {
   prayerContainer.appendChild(divPrayerCategory);
 
   category.target = divPrayerCategory;
+  category.expanded = true;
   appendMenuCategory(category, divPrayerCategory);
 
   return divPrayerCategorySubCategories;
@@ -227,9 +271,16 @@ function createSubCategory(divPrayerCategorySubCategories, subCategory) {
   divPrayerCategorySubCategories.appendChild(divPrayerSubCategory);
 
   appendMenuSubCategory(subCategory, divPrayerSubCategory);
+  subCategory.target = divPrayerSubCategory;
+  subCategory.expanded = true;
 
-  subCategory.prayers.forEach((prayer) => {
+  let subCategoryPrayersSorted = subCategory.prayers.sort(
+    sortIntegerValues("sort")
+  );
+
+  subCategoryPrayersSorted.forEach((prayer) => {
     let divPrayer = insertPrayer(divPrayerSubCategoryPrayers, prayer);
+    prayer.target = divPrayer;
     appendMenuPrayer(prayer, divPrayer);
   });
 
