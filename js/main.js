@@ -88,12 +88,10 @@ function loadPrayers() {
   fetch(prayerFilepath)
     .then((response) => response.json())
     .then((json) => {
-      let everything = json;
-      let categoriesArray = Array.from(everything);
-      let categoriesArraySorted = categoriesArray.sort(
-        sortIntegerValues("sort")
-      );
-      categoriesArraySorted.forEach((category) => {
+      let menuItemsCategory = json;
+      menuItemsCategory.sort(sortIntegerValues("sort"));
+      menuItemsCategory.forEach((category) => {
+        console.log(category);
         let divPrayerCategorySubCategories = createCategory(category);
         let subCategoriesArray = Array.from(category.subCategories);
         let subCategoriesArraySorted = subCategoriesArray.sort(
@@ -103,11 +101,15 @@ function loadPrayers() {
           if (subCategory.display == true)
             createSubCategory(divPrayerCategorySubCategories, subCategory);
         });
-        // console.log(subCategoriesArray);
       });
-      // let beautifyJSON = JSON.stringify(prayers[0], null, 4);
     });
 }
+
+let menuItems = {
+  categories: [],
+  subCategories: [],
+  prayers: [],
+};
 
 function displayMenu() {
   let now = new Date();
@@ -126,6 +128,7 @@ function displayMenu() {
           if (category.subCategories[0].prayers.length === 0)
             displayCategory = false;
         }
+
         if (displayCategory || showCategoryEmpty) {
           appendMenuCategory(category);
         }
@@ -159,7 +162,6 @@ function displayMenu() {
 }
 
 function appendMenuCategory(category, target) {
-  console.log(target);
   let divMenuCategory = document.createElement("div");
   divMenuCategory.className = "menuItemCategory";
   divMenuCategory.onclick = function () {
@@ -202,6 +204,7 @@ function createCategory(category) {
   divPrayerCategory.appendChild(divPrayerCategorySubCategories);
   prayerContainer.appendChild(divPrayerCategory);
 
+  category.target = divPrayerCategory;
   appendMenuCategory(category, divPrayerCategory);
 
   return divPrayerCategorySubCategories;
@@ -358,10 +361,8 @@ async function closeMenu() {
 }
 
 async function closeMenuThenScroll(target) {
-  console.log("started menu close");
   hamburger.classList.toggle("is-active");
   await closeMenu();
-  // console.log("scrolling to " + target.id);
   target.scrollIntoView();
   window.scrollBy(0, -90);
 }
@@ -371,7 +372,6 @@ function scrollTo(element) {
 }
 
 async function processTextFile(filename) {
-  console.log(filename);
   getTextFile(filename).then((textString) => {
     console.log(textString);
   });

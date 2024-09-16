@@ -139,6 +139,7 @@ div {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
+
 .hamburgerIcon {
   position: fixed;
   right: 40px;

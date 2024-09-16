@@ -344,7 +344,7 @@
         "category": "chaplets",
         "title": "Chaplets",
         "subTitle": "",
-        "sort": 3,
+        "sort": 2,
         "display": true,
         "expanded": true,
         "subCategories": [
@@ -374,7 +374,7 @@
         "category": "novenas",
         "title": "Novenas",
         "subTitle": "",
-        "sort": 4,
+        "sort": 6,
         "display": true,
         "expanded": true,
         "subCategories": [
@@ -410,7 +410,7 @@
         "category": "rosary",
         "title": "Rosary",
         "subTitle": "",
-        "sort": 2,
+        "sort": 3,
         "display": true,
         "expanded": true,
         "subCategories": [
@@ -440,7 +440,7 @@
         "category": "deliverance",
         "title": "Deliverance",
         "subTitle": "",
-        "sort": 6,
+        "sort": 4,
         "display": true,
         "expanded": true,
         "subCategories": [
