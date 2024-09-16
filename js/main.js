@@ -39,10 +39,14 @@ let elementMenuList = document.getElementById("menuList");
 let menuDimensions = elementMenu.getBoundingClientRect();
 let prayerLinkSeed = 0;
 
+let menuObject = {};
+
 window.onload = async function () {
   resetWidthHeight();
   addEventListeners();
   loadPrayers();
+  window.scrollBy(0, 100);
+  // displayMenu();
 };
 
 function test() {
@@ -105,6 +109,86 @@ function loadPrayers() {
     });
 }
 
+function displayMenu() {
+  let now = new Date();
+  let showCategoryEmpty = false;
+  let showSubCategoryEmpty = false;
+  fetch(prayerFilepath)
+    .then((response) => response.json())
+    .then((menuJson) => {
+      let menuArray = Array.from(menuJson);
+      let menuCategoriesSorted = menuArray.sort(sortIntegerValues("sort"));
+      menuCategoriesSorted.forEach((category) => {
+        let displayCategory = true;
+        if (category.display === false) displayCategory = false;
+        if (category.subCategories.length === 0) displayCategory = false;
+        if (category.subCategories.length == 1) {
+          if (category.subCategories[0].prayers.length === 0)
+            displayCategory = false;
+        }
+        if (displayCategory || showCategoryEmpty) {
+          appendMenuCategory(category);
+        }
+
+        let menuSubCategories = Array.from(category.subCategories);
+        menuSubCategories = category.subCategories;
+        let menuSubCategoriesSorted = menuSubCategories.sort(
+          sortIntegerValues("sort")
+        );
+
+        menuSubCategoriesSorted.forEach((subCategory) => {
+          let displaySubCategory = true;
+          if (subCategory.display === false) displaySubCategory = false;
+          if (subCategory.prayers.length === 0) displaySubCategory = false;
+          if (displaySubCategory) {
+            appendMenuSubCategory(subCategory);
+          }
+          let menuPrayers = subCategory.prayers;
+          let menuPrayersSorted = menuPrayers.sort(sortIntegerValues("sort"));
+          menuPrayersSorted.forEach((prayer) => {
+            let displayPrayer = true;
+            if (prayer.display === false) displayPrayer = false;
+            if (displayPrayer) {
+              appendMenuPrayer(prayer);
+            }
+          });
+        });
+      });
+    })
+    .then(() => {});
+}
+
+function appendMenuCategory(category, target) {
+  console.log(target);
+  let divMenuCategory = document.createElement("div");
+  divMenuCategory.className = "menuItemCategory";
+  divMenuCategory.onclick = function () {
+    closeMenuThenScroll(target);
+  };
+  divMenuCategory.innerHTML = `${category.title}`;
+  elementMenuList.appendChild(divMenuCategory);
+}
+
+function appendMenuSubCategory(subCategory, target) {
+  let divMenuSubCategory = document.createElement("div");
+  divMenuSubCategory.className = "menuItemSubCategory";
+  divMenuSubCategory.innerHTML = `${subCategory.title}`;
+  divMenuSubCategory.onclick = function () {
+    closeMenuThenScroll(target);
+  };
+  elementMenuList.appendChild(divMenuSubCategory);
+}
+
+function appendMenuPrayer(prayer, target) {
+  let divMenuPrayer = document.createElement("div");
+  divMenuPrayer.className = "menuItemPrayer";
+  divMenuPrayer.innerHTML = `${prayer.title}`;
+  divMenuPrayer.onclick = function () {
+    closeMenuThenScroll(target);
+  };
+  elementMenuList.appendChild(divMenuPrayer);
+}
+
 function createCategory(category) {
   let divPrayerCategory = document.createElement("div");
   divPrayerCategory.id = `menuItem_${prayerLinkSeed++}`;
@@ -118,13 +202,7 @@ function createCategory(category) {
   divPrayerCategory.appendChild(divPrayerCategorySubCategories);
   prayerContainer.appendChild(divPrayerCategory);
 
-  let divMenuCategory = document.createElement("div");
-  divMenuCategory.className = "menuItemCategory";
-  divMenuCategory.onclick = function () {
-    closeMenuThenScroll(divPrayerCategory);
-  };
-  divMenuCategory.innerHTML = `${category.title}`;
-  elementMenuList.appendChild(divMenuCategory);
+  appendMenuCategory(category, divPrayerCategory);
 
   return divPrayerCategorySubCategories;
 }
@@ -145,23 +223,11 @@ function createSubCategory(divPrayerCategorySubCategories, subCategory) {
 
   divPrayerCategorySubCategories.appendChild(divPrayerSubCategory);
 
-  let divMenuSubCategory = document.createElement("div");
-  divMenuSubCategory.className = "menuItemSubCategory";
-  divMenuSubCategory.innerHTML = `${subCategory.title}`;
-  divMenuSubCategory.onclick = function () {
-    closeMenuThenScroll(divPrayerSubCategory);
-  };
-  elementMenuList.appendChild(divMenuSubCategory);
+  appendMenuSubCategory(subCategory, divPrayerSubCategory);
 
   subCategory.prayers.forEach((prayer) => {
     let divPrayer = insertPrayer(divPrayerSubCategoryPrayers, prayer);
-    let divMenuPrayer = document.createElement("div");
-    divMenuPrayer.className = "menuItemPrayer";
-    divMenuPrayer.innerHTML = `${prayer.title}`;
-    divMenuPrayer.onclick = function () {
-      closeMenuThenScroll(divPrayer);
-    };
-    elementMenuList.appendChild(divMenuPrayer);
+    appendMenuPrayer(prayer, divPrayer);
   });
 
   return divPrayerSubCategoryPrayers;
@@ -285,7 +351,7 @@ function openMenu() {
 async function closeMenu() {
   gsap
     .to(elementMenu, {
-      duration: 2.5,
+      duration: 0.5,
       right: menuDimensions.width * -1,
     })
     .then(() => {});
@@ -297,7 +363,7 @@ async function closeMenuThenScroll(target) {
   await closeMenu();
   // console.log("scrolling to " + target.id);
   target.scrollIntoView();
-  window.scrollBy(0, -100);
+  window.scrollBy(0, -90);
 }
 
 function scrollTo(element) {

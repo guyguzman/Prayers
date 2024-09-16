@@ -50,12 +50,13 @@
   align-items: center;
   justify-items: center;
   font-size: 70px;
-  font-weight: 400;
+  font-weight: 600;
   color: rgba(255, 255, 255, 1);
   border-style: solid;
   border-width: 1px 0 0 0;
   border-color: white;
   margin-bottom: 60px;
+  text-transform: uppercase;
 }
 
 .prayerCategorySubCategories {
@@ -85,9 +86,10 @@
   grid-template-rows: 1fr;
   align-items: center;
   justify-items: center;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
 }
 
 .prayerSubCategoryPrayers {

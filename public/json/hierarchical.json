@@ -5,12 +5,14 @@
         "subTitle": "",
         "sort": 1,
         "display": true,
+        "expanded": true,
         "subCategories": [
             {
                 "title": "Blessed Virgin Mary",
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "Hail Mary",
@@ -52,6 +54,7 @@
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "Our Father",
@@ -104,6 +107,7 @@
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "category": "Flame of Love",
@@ -136,6 +140,7 @@
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "Guardian Angel Prayer",
@@ -155,6 +160,7 @@
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "St Michael Prayer",
@@ -185,6 +191,7 @@
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "Year Of St Joseph",
@@ -204,6 +211,7 @@
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "Precious Blood",
@@ -245,6 +253,7 @@
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "3 O’Clock Prayer",
@@ -275,6 +284,7 @@
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "Nicene Creed",
@@ -305,6 +315,7 @@
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "Most Precious Blood",
@@ -324,6 +335,7 @@
                 "subTitle": "",
                 "sort": 1,
                 "display": false,
+                "expanded": true,
                 "prayers": []
             }
         ]
@@ -334,12 +346,14 @@
         "subTitle": "",
         "sort": 3,
         "display": true,
+        "expanded": true,
         "subCategories": [
             {
                 "title": "Divine Mercy",
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "Divine Mercy Chaplet",
@@ -362,12 +376,14 @@
         "subTitle": "",
         "sort": 4,
         "display": true,
+        "expanded": true,
         "subCategories": [
             {
                 "title": "",
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": []
             }
         ]
@@ -378,12 +394,14 @@
         "subTitle": "",
         "sort": 5,
         "display": true,
+        "expanded": true,
         "subCategories": [
             {
                 "title": "",
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": []
             }
         ]
@@ -394,12 +412,14 @@
         "subTitle": "",
         "sort": 2,
         "display": true,
+        "expanded": true,
         "subCategories": [
             {
                 "title": "Rosary",
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "Rosary",
@@ -422,12 +442,14 @@
         "subTitle": "",
         "sort": 6,
         "display": true,
+        "expanded": true,
         "subCategories": [
             {
                 "title": "Oppression",
                 "subTitle": "",
                 "sort": 1,
                 "display": true,
+                "expanded": true,
                 "prayers": [
                     {
                         "title": "Deliverance from Oppression",

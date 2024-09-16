@@ -1,6 +1,8 @@
 @media screen and (max-width: 600px) {
   .prayerCategoryTitle {
-    font-size: 40px;
+    font-size: 36px;
+    font-weight: 600;
+    width: 90%;
   }
 
   .prayerSubCategoryTitle {
@@ -12,7 +14,7 @@
     align-items: center;
     justify-items: center;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 800;
     color: rgba(255, 255, 255, 0.9);
   }
   .expand {
